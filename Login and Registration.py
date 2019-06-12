@@ -6,6 +6,7 @@ import tkinter.messagebox
 
 def login_success():
     tkinter.messagebox.showinfo("Login Success", "You have Logged in successfully")
+    options()
 
 def incorrect_password():
     tkinter.messagebox.showinfo("Login Failed", "Incorrect password or username")
@@ -98,7 +99,102 @@ def login():
     Label(screen2, text="").pack()
     Button(screen2, text="Login", width="30", height="3", command=login_verify).pack()
 
+def options():
 
+    screen4 = Toplevel(screen)
+    screen4.geometry("720x640")
+
+    Label(screen4, text="").pack()
+    Button(screen4, text="Head Boy", width="40", height="3").pack()
+    Label(screen4, text="").pack()
+    Button(screen4, text="Head Girl", width="40", height="3").pack()
+    Label(screen4, text="").pack()
+    Button(screen4, text="Assistant Head Boy", width="40", height="3").pack()
+    Label(screen4, text="").pack()
+    Button(screen4, text="Assistant Head Girl", width="40", height="3").pack()
+    Label(screen4, text="").pack()
+    Button(screen4, text="Sports Captain", width="40", height="3").pack()
+    Label(screen4, text="").pack()
+    Button(screen4, text="Sports Vice Captain", width="40", height="3").pack()
+    Label(screen4, text="").pack()
+    Button(screen4, text="Cultural Captain", width="40", height="3").pack()
+    Label(screen4, text="").pack()
+    Button(screen4, text="Assistant Cultural Captain", width="40", height="3").pack()
+
+
+def headboy():
+
+    global screen3
+
+    Label(screen3, text="C1 ").pack()
+    Label(screen3, text="C2 ").pack()
+    Label(screen3, text="C3 ").pack()
+    Label(screen3, text="C4 ").pack()
+    candidates = []
+    counter = 0
+
+def headgirl():
+
+    Label(screen3, text="C1 ").pack()
+    Label(screen3, text="C2 ").pack()
+    Label(screen3, text="C3 ").pack()
+    Label(screen3, text="C4 ").pack()
+    candidates = []
+    counter = 0
+
+def asstheadboy():
+
+    Label(screen3, text="C1 ").pack()
+    Label(screen3, text="C2 ").pack()
+    Label(screen3, text="C3 ").pack()
+    Label(screen3, text="C4 ").pack()
+    candidates = []
+    counter = 0
+
+def asstheadgirl():
+
+    Label(screen3, text="C1 ").pack()
+    Label(screen3, text="C2 ").pack()
+    Label(screen3, text="C3 ").pack()
+    Label(screen3, text="C4 ").pack()
+    candidates = []
+    counter = 0
+
+def sportcap():
+
+    Label(screen3, text="C1 ").pack()
+    Label(screen3, text="C2 ").pack()
+    Label(screen3, text="C3 ").pack()
+    Label(screen3, text="C4 ").pack()
+    candidates = []
+    counter = 0
+
+def sportsvicecap():
+
+    Label(screen3, text="C1 ").pack()
+    Label(screen3, text="C2 ").pack()
+    Label(screen3, text="C3 ").pack()
+    Label(screen3, text="C4 ").pack()
+    candidates = []
+    counter = 0
+
+def culturalcap():
+
+    Label(screen3, text="C1 ").pack()
+    Label(screen3, text="C2 ").pack()
+    Label(screen3, text="C3 ").pack()
+    Label(screen3, text="C4 ").pack()
+    candidates = []
+    counter = 0
+
+def asstcultcap():
+
+    Label(screen3, text="C1 ").pack()
+    Label(screen3, text="C2 ").pack()
+    Label(screen3, text="C3 ").pack()
+    Label(screen3, text="C4 ").pack()
+    candidates = []
+    counter = 0
 
 
 
@@ -120,3 +216,5 @@ def main_screen():
     screen.mainloop()
 
 main_screen()
+
+
