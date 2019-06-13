@@ -105,94 +105,125 @@ def options():
     screen4.geometry("720x640")
 
     Label(screen4, text="").pack()
-    Button(screen4, text="Head Boy", width="40", height="3").pack()
+    Button(screen4, text="Head Boy", width="40", height="3", command=headboy).pack()
     Label(screen4, text="").pack()
-    Button(screen4, text="Head Girl", width="40", height="3").pack()
+    Button(screen4, text="Head Girl", width="40", height="3", command=headgirl).pack()
     Label(screen4, text="").pack()
-    Button(screen4, text="Assistant Head Boy", width="40", height="3").pack()
+    Button(screen4, text="Assistant Head Boy", width="40", height="3", command=asstheadboy).pack()
     Label(screen4, text="").pack()
-    Button(screen4, text="Assistant Head Girl", width="40", height="3").pack()
+    Button(screen4, text="Assistant Head Girl", width="40", height="3", command=asstheadgirl).pack()
     Label(screen4, text="").pack()
-    Button(screen4, text="Sports Captain", width="40", height="3").pack()
+    Button(screen4, text="Sports Captain", width="40", height="3", command=sportcap).pack()
     Label(screen4, text="").pack()
-    Button(screen4, text="Sports Vice Captain", width="40", height="3").pack()
+    Button(screen4, text="Sports Vice Captain", width="40", height="3", command=sportsvicecap).pack()
     Label(screen4, text="").pack()
-    Button(screen4, text="Cultural Captain", width="40", height="3").pack()
+    Button(screen4, text="Cultural Captain", width="40", height="3", command=culturalcap).pack()
     Label(screen4, text="").pack()
-    Button(screen4, text="Assistant Cultural Captain", width="40", height="3").pack()
+    Button(screen4, text="Assistant Cultural Captain", width="40", height="3", command=asstcultcap).pack()
 
 
 def headboy():
 
-    global screen3
+    global screen5
+    screen5 = Toplevel(screen)
+    screen5.geometry("640x480")
+    screen5.title("Head Boy Candidates List")
 
-    Label(screen3, text="C1 ").pack()
-    Label(screen3, text="C2 ").pack()
-    Label(screen3, text="C3 ").pack()
-    Label(screen3, text="C4 ").pack()
+    Label(screen5, text="C1 ").pack()
+    Label(screen5, text="C2 ").pack()
+    Label(screen5, text="C3 ").pack()
+    Label(screen5, text="C4 ").pack()
     candidates = []
     counter = 0
 
 def headgirl():
 
-    Label(screen3, text="C1 ").pack()
-    Label(screen3, text="C2 ").pack()
-    Label(screen3, text="C3 ").pack()
-    Label(screen3, text="C4 ").pack()
+    screen5 = Toplevel(screen)
+    screen5.geometry("640x480")
+    screen5.title("Head Girl Candidates List")
+
+    Label(screen5, text="C1 ").pack()
+    Label(screen5, text="C2 ").pack()
+    Label(screen5, text="C3 ").pack()
+    Label(screen5, text="C4 ").pack()
     candidates = []
     counter = 0
 
 def asstheadboy():
 
-    Label(screen3, text="C1 ").pack()
-    Label(screen3, text="C2 ").pack()
-    Label(screen3, text="C3 ").pack()
-    Label(screen3, text="C4 ").pack()
+    screen5 = Toplevel(screen)
+    screen5.geometry("640x480")
+    screen5.title("Assistant Head Boy Candidates List")
+
+    Label(screen5, text="C1 ").pack()
+    Label(screen5, text="C2 ").pack()
+    Label(screen5, text="C3 ").pack()
+    Label(screen5, text="C4 ").pack()
     candidates = []
     counter = 0
 
 def asstheadgirl():
 
-    Label(screen3, text="C1 ").pack()
-    Label(screen3, text="C2 ").pack()
-    Label(screen3, text="C3 ").pack()
-    Label(screen3, text="C4 ").pack()
+    screen5 = Toplevel(screen)
+    screen5.geometry("640x480")
+    screen5.title("Assistant Head Girl Candidates List")
+
+    Label(screen5, text="C1 ").pack()
+    Label(screen5, text="C2 ").pack()
+    Label(screen5, text="C3 ").pack()
+    Label(screen5, text="C4 ").pack()
     candidates = []
     counter = 0
 
 def sportcap():
 
-    Label(screen3, text="C1 ").pack()
-    Label(screen3, text="C2 ").pack()
-    Label(screen3, text="C3 ").pack()
-    Label(screen3, text="C4 ").pack()
+    screen5 = Toplevel(screen)
+    screen5.geometry("640x480")
+    screen5.title("Sports Captain Candidates List")
+
+    Label(screen5, text="C1 ").pack()
+    Label(screen5, text="C2 ").pack()
+    Label(screen5, text="C3 ").pack()
+    Label(screen5, text="C4 ").pack()
     candidates = []
     counter = 0
 
 def sportsvicecap():
 
-    Label(screen3, text="C1 ").pack()
-    Label(screen3, text="C2 ").pack()
-    Label(screen3, text="C3 ").pack()
-    Label(screen3, text="C4 ").pack()
+    screen5 = Toplevel(screen)
+    screen5.geometry("640x480")
+    screen5.title("Sports Vice Captain Candidates List")
+
+    Label(screen5, text="C1 ").pack()
+    Label(screen5, text="C2 ").pack()
+    Label(screen5, text="C3 ").pack()
+    Label(screen5, text="C4 ").pack()
     candidates = []
     counter = 0
 
 def culturalcap():
 
-    Label(screen3, text="C1 ").pack()
-    Label(screen3, text="C2 ").pack()
-    Label(screen3, text="C3 ").pack()
-    Label(screen3, text="C4 ").pack()
+    screen5 = Toplevel(screen)
+    screen5.geometry("640x480")
+    screen5.title("Cultural Captain Candidates List")
+
+    Label(screen5, text="C1 ").pack()
+    Label(screen5, text="C2 ").pack()
+    Label(screen5, text="C3 ").pack()
+    Label(screen5, text="C4 ").pack()
     candidates = []
     counter = 0
 
 def asstcultcap():
 
-    Label(screen3, text="C1 ").pack()
-    Label(screen3, text="C2 ").pack()
-    Label(screen3, text="C3 ").pack()
-    Label(screen3, text="C4 ").pack()
+    screen5 = Toplevel(screen)
+    screen5.geometry("640x480")
+    screen5.title("Assistant Cultural Captain Candidates List")
+
+    Label(screen5, text="C1 ").pack()
+    Label(screen5, text="C2 ").pack()
+    Label(screen5, text="C3 ").pack()
+    Label(screen5, text="C4 ").pack()
     candidates = []
     counter = 0
 
