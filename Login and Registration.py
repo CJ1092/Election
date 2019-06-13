@@ -4,17 +4,17 @@ from tkinter import *
 from PIL import ImageTk, Image
 import tkinter.messagebox
 
-def login_success():
+def login_success(): # message box to display login successful message
     tkinter.messagebox.showinfo("Login Success", "You have Logged in successfully")
-    options()
+    options() # function to display the Candidate options
 
-def incorrect_password():
+def incorrect_password(): # message box to display password error
     tkinter.messagebox.showinfo("Login Failed", "Incorrect password or username")
 
-def user_not_found():
+def user_not_found(): # message box to display unknown user
     tkinter.messagebox.showinfo("Unknown User", "User not identified")
 
-def register_user():
+def register_user(): # function to record the registered user into the list
     username_info = username.get()
     password_info = password.get()
 
@@ -28,7 +28,7 @@ def register_user():
 
     Label(screen1, text="Registration Successful", fg="green", font=("calibri", 11)).pack()
 
-def register():
+def register(): # function to register new users
     global screen1
     screen1 = Toplevel(screen)
     screen1.title("Register")
@@ -53,7 +53,7 @@ def register():
     Label(screen1, text="").pack()
     Button(screen1, text="Register", height="3", width="30", command=register_user).pack()
 
-def login_verify():
+def login_verify(): # function to verify the login credentials
 
     username1 = username_verify.get()
     password1 = password_verify.get()
@@ -72,7 +72,7 @@ def login_verify():
     else:
         user_not_found()
 
-def login():
+def login(): # function to login for each user
     global screen2
     screen2 = Toplevel(screen)
     screen2.title("Login")
@@ -99,7 +99,7 @@ def login():
     Label(screen2, text="").pack()
     Button(screen2, text="Login", width="30", height="3", command=login_verify).pack()
 
-def options():
+def options(): # function to display the Posts
 
     screen4 = Toplevel(screen)
     screen4.geometry("720x640")
@@ -122,7 +122,7 @@ def options():
     Button(screen4, text="Assistant Cultural Captain", width="40", height="3", command=asstcultcap).pack()
 
 
-def headboy():
+def headboy(): # function to display the candidates
 
     global screen5
     screen5 = Toplevel(screen)
@@ -136,7 +136,7 @@ def headboy():
     candidates = []
     counter = 0
 
-def headgirl():
+def headgirl(): # function to display the candidates
 
     screen5 = Toplevel(screen)
     screen5.geometry("640x480")
@@ -149,7 +149,7 @@ def headgirl():
     candidates = []
     counter = 0
 
-def asstheadboy():
+def asstheadboy(): # function to display the candidates
 
     screen5 = Toplevel(screen)
     screen5.geometry("640x480")
@@ -162,7 +162,7 @@ def asstheadboy():
     candidates = []
     counter = 0
 
-def asstheadgirl():
+def asstheadgirl(): # function to display the candidates
 
     screen5 = Toplevel(screen)
     screen5.geometry("640x480")
@@ -175,7 +175,7 @@ def asstheadgirl():
     candidates = []
     counter = 0
 
-def sportcap():
+def sportcap(): # function to display the candidates
 
     screen5 = Toplevel(screen)
     screen5.geometry("640x480")
@@ -188,7 +188,7 @@ def sportcap():
     candidates = []
     counter = 0
 
-def sportsvicecap():
+def sportsvicecap(): # function to display the candidates
 
     screen5 = Toplevel(screen)
     screen5.geometry("640x480")
@@ -201,7 +201,7 @@ def sportsvicecap():
     candidates = []
     counter = 0
 
-def culturalcap():
+def culturalcap(): # function to display the candidates
 
     screen5 = Toplevel(screen)
     screen5.geometry("640x480")
@@ -214,7 +214,7 @@ def culturalcap():
     candidates = []
     counter = 0
 
-def asstcultcap():
+def asstcultcap(): # function to display the candidates
 
     screen5 = Toplevel(screen)
     screen5.geometry("640x480")
@@ -229,7 +229,7 @@ def asstcultcap():
 
 
 
-def main_screen():
+def main_screen(): # main opening screen with logo.
     global screen
     screen = Tk()
     screen.geometry("720x640")
