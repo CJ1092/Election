@@ -6,6 +6,7 @@ import tkinter.messagebox
 
 def login_success(): # message box to display login successful message
     tkinter.messagebox.showinfo("Login Success", "You have Logged in successfully")
+    screen2.destroy()
     options() # function to display the Candidate options
 
 def incorrect_password(): # message box to display password error
@@ -99,6 +100,7 @@ def login(): # function to login for each user
     Label(screen2, text="").pack()
     Button(screen2, text="Login", width="30", height="3", command=login_verify).pack()
 
+
 def options(): # function to display the Posts
 
     screen4 = Toplevel(screen)
@@ -121,8 +123,94 @@ def options(): # function to display the Posts
     Label(screen4, text="").pack()
     Button(screen4, text="Assistant Cultural Captain", width="40", height="2", command=asstcultcap).pack()
     Label(screen4, text="").pack()
-    Button(screen4, text="Houses", width="50", height="2").pack()
+    Button(screen4, text="Houses", width="50", height="2", command=houses).pack()
 
+def counter():
+
+    counterHB1 = 0
+    counterHB2 = 0
+    counterHB3 = 0
+    counterHB4 = 0
+    counterHB5 = 0
+    
+    counterHG1 = 0
+    counterHG2 = 0
+    counterHG3 = 0
+    counterHG4 = 0
+    counterHG5 = 0
+
+    counterAHB1 = 0
+    counterAHB2 = 0
+    counterAHB3 = 0
+    counterAHB4 = 0
+    counterAHB5 = 0
+
+    counterAHG1 = 0
+    counterAHG2 = 0
+    counterAHG3 = 0
+    counterAHG4 = 0
+    counterAHG5 = 0
+
+    counterSC1 = 0
+    counterSC2 = 0
+    counterSC3 = 0
+    counterSC4 = 0
+    counterSC5 = 0
+
+    counterASC1 = 0
+    counterASC2 = 0
+    counterASC3 = 0
+    counterASC4 = 0
+    counterASC5 = 0
+
+    counterCS1 = 0
+    counterCS2 = 0
+    counterCS3 = 0
+    counterCS4 = 0
+    counterCS5 = 0
+
+    counterACS1 = 0
+    counterACS2 = 0
+    counterACS3 = 0
+    counterACS4 = 0
+    counterACS5 = 0
+
+def houses():
+    global screen6
+    screen6 = Toplevel(screen)
+    screen6.geometry("640x480")
+    screen6.title("Houses")
+
+    Label(screen6, text="**** PLEASE SELECT ONLY YOUR RESPECTIVE HOUSE ****").pack()
+
+    Label(screen6, text="").pack()
+    Button(screen6, text="Cauvery", width="40", height="2").pack()
+    Label(screen6, text="").pack()
+    Button(screen6, text="Gangotri", width="40", height="2").pack()
+    Label(screen6, text="").pack()
+    Button(screen6, text="Narmada", width="40", height="2").pack()
+    Label(screen6, text="").pack()
+    Button(screen6, text="Periyar", width="40", height="2").pack()
+
+def cauvery():
+    counterHC = 0
+    counterHVC = 0
+    counterJrHC = 0
+
+def gangotri():
+    counterHC = 0
+    counterHVC = 0
+    counterJrHC = 0
+
+def narmada():
+    counterHC = 0
+    counterHVC = 0
+    counterJrHC = 0
+
+def periyar():
+    counterHC = 0
+    counterHVC = 0
+    counterJrHC = 0
 
 def headboy(): # function to display the candidates
 
