@@ -4,9 +4,12 @@ from tkinter import *
 from PIL import ImageTk, Image
 import tkinter.messagebox
 
+def screendestroy(screen):
+    screen.destroy()
+
 def login_success(): # message box to display login successful message
     tkinter.messagebox.showinfo("Login Success", "You have Logged in successfully")
-    screen2.destroy()
+    screendestroy(screen2)
     options() # function to display the Candidate options
 
 def incorrect_password(): # message box to display password error
@@ -132,7 +135,7 @@ def counter():
     counterHB3 = 0
     counterHB4 = 0
     counterHB5 = 0
-    
+
     counterHG1 = 0
     counterHG2 = 0
     counterHG3 = 0
@@ -220,15 +223,14 @@ def headboy(): # function to display the candidates
     screen5.title("Head Boy Candidates List")
 
     Label(screen5, text="C1 ").grid() # grid have left intentation
-    Button(screen5, text="C1").grid()
+    Button(screen5, text="C1", command=counter).grid()
     Label(screen5, text="C2 ").grid()
-    Button(screen5, text="C1").grid()
+    Button(screen5, text="C1", command=counter).grid()
     Label(screen5, text="C3 ").pack() # pack has central intentation
-    Button(screen5, text="C1").pack()
+    Button(screen5, text="C1", command=counter).pack()
     Label(screen5, text="C4 ").pack()
-    Button(screen5, text="C1").pack()
+    Button(screen5, text="C1", command=counter).pack()
     candidates = []
-    counter = 0
 
 def headgirl(): # function to display the candidates
 
@@ -245,7 +247,6 @@ def headgirl(): # function to display the candidates
     Label(screen5, text="C4 ").pack()
     Button(screen5, text="C1").pack()
     candidates = []
-    counter = 0
 
 def asstheadboy(): # function to display the candidates
 
@@ -262,7 +263,6 @@ def asstheadboy(): # function to display the candidates
     Label(screen5, text="C4 ").pack()
     Button(screen5, text="C1").pack()
     candidates = []
-    counter = 0
 
 def asstheadgirl(): # function to display the candidates
 
@@ -279,7 +279,6 @@ def asstheadgirl(): # function to display the candidates
     Label(screen5, text="C4 ").pack()
     Button(screen5, text="C1").pack()
     candidates = []
-    counter = 0
 
 def sportcap(): # function to display the candidates
 
@@ -296,7 +295,6 @@ def sportcap(): # function to display the candidates
     Label(screen5, text="C4 ").pack()
     Button(screen5, text="C1").pack()
     candidates = []
-    counter = 0
 
 def sportsvicecap(): # function to display the candidates
 
@@ -313,7 +311,6 @@ def sportsvicecap(): # function to display the candidates
     Label(screen5, text="C4 ").pack()
     Button(screen5, text="C1").pack()
     candidates = []
-    counter = 0
 
 def culturalcap(): # function to display the candidates
 
@@ -330,7 +327,6 @@ def culturalcap(): # function to display the candidates
     Label(screen5, text="C4 ").pack()
     Button(screen5, text="C1").pack()
     candidates = []
-    counter = 0
 
 def asstcultcap(): # function to display the candidates
 
@@ -347,8 +343,6 @@ def asstcultcap(): # function to display the candidates
     Label(screen5, text="C4 ").pack()
     Button(screen5, text="C1").pack()
     candidates = []
-    counter = 0
-
 
 
 def main_screen(): # main opening screen with logo.
