@@ -40,6 +40,9 @@ def register(): # function to register new users
     screen1.title("Register")
     screen1.geometry("640x480")
 
+    status = Label(screen1, text="The Choice School", bd=1, relief=SUNKEN, anchor=W)
+    status.pack(side=BOTTOM, fill=X)
+
     global username
     global password
     global username_entry
@@ -83,6 +86,10 @@ def login(): # function to login for each user
     screen2 = Toplevel(screen)
     screen2.title("Login")
     screen2.geometry("640x480")
+
+    status = Label(screen2, text="The Choice School", bd=1, relief=SUNKEN, anchor=W)
+    status.pack(side=BOTTOM, fill=X)
+
     Label(screen2, text="Please enter details below to Login").pack()
     Label(screen2, text=" ").pack()
 
@@ -111,6 +118,9 @@ def options(): # function to display the Posts
     screen4 = Toplevel(screen)
     screen4.geometry("720x640")
 
+    status = Label(screen4, text="The Choice School", bd=1, relief=SUNKEN, anchor=W)
+    status.pack(side=BOTTOM, fill=X)
+
     Label(screen4, text="").pack()
     Button(screen4, text="Head Boy", width="40", height="2", command=headboy).pack()
     Label(screen4, text="").pack()
@@ -133,8 +143,11 @@ def options(): # function to display the Posts
 ####HeadBoy Counter####
 
 def counterHB1():
-    counterHB1 = 0
-    counterHB1 = counterHB1 + 1
+    counterhb1 = 0
+    counterhb1 = counterhb1 + 1
+    counterhb1fin = []
+    counterhb1fin.append(counterhb1)
+    print counterhb1fin
 
 def counterHB2():
     counterHB2 = 0
@@ -257,21 +270,69 @@ def houses():
     Button(screen6, text="Periyar", width="40", height="2").pack()
 
 def cauvery():
+
+    global screen7
+    screen7 = Toplevel(screen)
+    screen7.geometry("640x480")
+    screen7.title("Cauvery")
+
+    Label(text="").pack()
+    Button(text="House Captain", width="30", height="2")
+    Label(text="").pack()
+    Button(text="House Vice Captain", width="30", height="2").pack()
+    Label(text="").pack()
+    Button(text="Junior House Captain", width="30", height="2")
     counterHC = 0
     counterHVC = 0
     counterJrHC = 0
 
 def gangotri():
+
+    global screen7
+    screen7 = Toplevel(screen)
+    screen7.geometry("640x480")
+    screen7.title("Gangotri")
+
+    Label(text="").pack()
+    Button(text="House Captain", width="30", height="2")
+    Label(text="").pack()
+    Button(text="House Vice Captain", width="30", height="2").pack()
+    Label(text="").pack()
+    Button(text="Junior House Captain", width="30", height="2")
     counterHC = 0
     counterHVC = 0
     counterJrHC = 0
 
 def narmada():
+
+    global screen7
+    screen7 = Toplevel(screen)
+    screen7.geometry("640x480")
+    screen7.title("Narmada")
+
+    Label(text="").pack()
+    Button(text="House Captain", width="30", height="2")
+    Label(text="").pack()
+    Button(text="House Vice Captain", width="30", height="2").pack()
+    Label(text="").pack()
+    Button(text="Junior House Captain", width="30", height="2")
     counterHC = 0
     counterHVC = 0
     counterJrHC = 0
 
 def periyar():
+    
+    global screen7
+    screen7 = Toplevel(screen)
+    screen7.geometry("640x480")
+    screen7.title("Periyar")
+
+    Label(text="").pack()
+    Button(text="House Captain", width="30", height="2")
+    Label(text="").pack()
+    Button(text="House Vice Captain", width="30", height="2").pack()
+    Label(text="").pack()
+    Button(text="Junior House Captain", width="30", height="2")
     counterHC = 0
     counterHVC = 0
     counterJrHC = 0
@@ -414,6 +475,9 @@ def main_screen(): # main opening screen with logo.
 
     photo = ImageTk.PhotoImage(Image.open("logo.png"))
     Label(image=photo).pack()
+
+    status = Label(text="The Choice School", bd=1, relief=SUNKEN, anchor=W)
+    status.pack(side=BOTTOM, fill=X)
 
     Label(text="Student Council Election 2019-20", bg = "grey", width="720", height="3", font = ("Calibri", 13)).pack()
     Label(text="").pack()
