@@ -1,8 +1,10 @@
 # !/usr/bin/python
 import os
 from tkinter import *
-from PIL import ImageTk, Image
 import tkinter.messagebox
+from PIL import ImageTk, Image
+from collections import Counter
+
 
 def screendestroy(screen):
     screen.destroy()
@@ -128,55 +130,114 @@ def options(): # function to display the Posts
     Label(screen4, text="").pack()
     Button(screen4, text="Houses", width="50", height="2", command=houses).pack()
 
-def counter():
+####HeadBoy Counter####
 
+def counterHB1():
     counterHB1 = 0
+    counterHB1 = counterHB1 + 1
+
+def counterHB2():
     counterHB2 = 0
+    counterHB2 = counterHB2+1
+
+def counterHB3():
     counterHB3 = 0
+    counterHB3 = counterHB3+1
+
+def counterHB4():
     counterHB4 = 0
-    counterHB5 = 0
+    counterHB4 = counterHB4+1
 
+####HeadGirl Counter####
+def counterHG1():
     counterHG1 = 0
+
+def counterHG2():
     counterHG2 = 0
+
+def counterHG3():
     counterHG3 = 0
+
+def counterHG4():
     counterHG4 = 0
-    counterHG5 = 0
 
+####AsstHeadBoy Counter####
+def counterAHB1():
     counterAHB1 = 0
+
+def counterAHB2():
     counterAHB2 = 0
+
+def counterAHB3():
     counterAHB3 = 0
+
+def counterAHB4():
     counterAHB4 = 0
-    counterAHB5 = 0
 
+####AsstHeadGirl Counter####
+def counterAHG1():
     counterAHG1 = 0
+
+def counterAHG2():
     counterAHG2 = 0
+
+def counterAHG3():
     counterAHG3 = 0
+
+def counterAHG4():
     counterAHG4 = 0
-    counterAHG5 = 0
 
+####Sports Captain Counter####
+def counterSC1():
     counterSC1 = 0
+
+def counterSC2():
     counterSC2 = 0
+
+def counterSC3():
     counterSC3 = 0
+
+def counterSC4():
     counterSC4 = 0
-    counterSC5 = 0
 
+####AsstSports Captain Counter####
+def counterASC1():
     counterASC1 = 0
+
+def counterASC2():
     counterASC2 = 0
+
+def counterASC3():
     counterASC3 = 0
+
+def counterASC4():
     counterASC4 = 0
-    counterASC5 = 0
 
+####Cultural Secretary Counter####
+def counterCS1():
     counterCS1 = 0
-    counterCS2 = 0
-    counterCS3 = 0
-    counterCS4 = 0
-    counterCS5 = 0
 
+def counterCS2():
+    counterCS2 = 0
+
+def counterCS3():
+    counterCS3 = 0
+
+def counterCS4():
+    counterCS4 = 0
+
+####AsstCultural Secretary Counter####
+def counterACS1():
     counterACS1 = 0
+
+def counterACS2():
     counterACS2 = 0
+
+def counterACS3():
     counterACS3 = 0
+
+def counterACS4():
     counterACS4 = 0
-    counterACS5 = 0
 
 def houses():
     global screen6
@@ -223,13 +284,13 @@ def headboy(): # function to display the candidates
     screen5.title("Head Boy Candidates List")
 
     Label(screen5, text="C1 ").grid() # grid have left intentation
-    Button(screen5, text="C1", command=counter).grid()
+    Button(screen5, text="C1", command=counterHB1).grid()
     Label(screen5, text="C2 ").grid()
-    Button(screen5, text="C1", command=counter).grid()
+    Button(screen5, text="C1", command=counterHB2).grid()
     Label(screen5, text="C3 ").pack() # pack has central intentation
-    Button(screen5, text="C1", command=counter).pack()
+    Button(screen5, text="C1", command=counterHB3).pack()
     Label(screen5, text="C4 ").pack()
-    Button(screen5, text="C1", command=counter).pack()
+    Button(screen5, text="C1", command=counterHB4).pack()
     candidates = []
 
 def headgirl(): # function to display the candidates
@@ -239,13 +300,13 @@ def headgirl(): # function to display the candidates
     screen5.title("Head Girl Candidates List")
 
     Label(screen5, text="C1 ").grid() # grid have left intentation
-    Button(screen5, text="C1").grid()
+    Button(screen5, text="C1", command=counterHG1).grid()
     Label(screen5, text="C2 ").grid()
-    Button(screen5, text="C1").grid()
+    Button(screen5, text="C1", command=counterHG2).grid()
     Label(screen5, text="C3 ").pack() # pack has central intentation
-    Button(screen5, text="C1").pack()
+    Button(screen5, text="C1", command=counterHG3).pack()
     Label(screen5, text="C4 ").pack()
-    Button(screen5, text="C1").pack()
+    Button(screen5, text="C1", command=counterHG4).pack()
     candidates = []
 
 def asstheadboy(): # function to display the candidates
@@ -255,13 +316,13 @@ def asstheadboy(): # function to display the candidates
     screen5.title("Assistant Head Boy Candidates List")
 
     Label(screen5, text="C1 ").grid() # grid have left intentation
-    Button(screen5, text="C1").grid()
+    Button(screen5, text="C1", command=counterAHB1).grid()
     Label(screen5, text="C2 ").grid()
-    Button(screen5, text="C1").grid()
+    Button(screen5, text="C1", command=counterAHB2).grid()
     Label(screen5, text="C3 ").pack() # pack has central intentation
-    Button(screen5, text="C1").pack()
+    Button(screen5, text="C1", command=counterAHB3).pack()
     Label(screen5, text="C4 ").pack()
-    Button(screen5, text="C1").pack()
+    Button(screen5, text="C1", command=counterAHB4).pack()
     candidates = []
 
 def asstheadgirl(): # function to display the candidates
@@ -271,13 +332,13 @@ def asstheadgirl(): # function to display the candidates
     screen5.title("Assistant Head Girl Candidates List")
 
     Label(screen5, text="C1 ").grid() # grid have left intentation
-    Button(screen5, text="C1").grid()
+    Button(screen5, text="C1", command=counterAHG1).grid()
     Label(screen5, text="C2 ").grid()
-    Button(screen5, text="C1").grid()
+    Button(screen5, text="C1", command=counterAHG2).grid()
     Label(screen5, text="C3 ").pack() # pack has central intentation
-    Button(screen5, text="C1").pack()
+    Button(screen5, text="C1", command=counterAHG3).pack()
     Label(screen5, text="C4 ").pack()
-    Button(screen5, text="C1").pack()
+    Button(screen5, text="C1", command=counterAHG4).pack()
     candidates = []
 
 def sportcap(): # function to display the candidates
