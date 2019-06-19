@@ -4,6 +4,43 @@ from tkinter import *
 import tkinter.messagebox
 from PIL import ImageTk, Image
 
+#### Global counter for headboy
+counterHB01 = 0
+counterHB02 = 0
+counterHB03 = 0
+
+#### Global counter for headgirl
+counterHG01 = 0
+counterHG02 = 0
+
+#### Global counter for asst headboy
+counterAHB01 = 0
+counterAHB02 = 0
+
+#### Global counter for asst headgirl
+counterAHG01 = 0
+counterAHG02 = 0
+counterAHG03 = 0
+
+#### Global counter for sports captain
+counterSC01 = 0
+counterSC02 = 0
+
+#### Global counter for sports vice captain
+counterASC01 = 0
+counterASC02 = 0
+counterASC03 = 0
+
+#### Global counter for cultural captain
+counterCS01 = 0
+
+#### Global counter for asst cultural captain
+counterACS01 = 0
+counterACS02 = 0
+counterACS03 = 0
+counterACS04 = 0
+counterACS05 = 0
+
 
 def screendestroy(screen):
     screen.destroy()
@@ -144,114 +181,165 @@ def options(): # function to display the Posts
 ####HeadBoy Counter####
 
 def counterHB1():
-    counterhb1 = 0
-    counterhb1 = counterhb1 + 1
+    global counterHB01
+    counterHB01 = counterHB01 + 1
     counterhb1fin = []
-    counterhb1fin.append(counterhb1)
+    counterhb1fin.append(counterHB01)
     print counterhb1fin
 
 def counterHB2():
-    counterHB2 = 0
-    counterHB2 = counterHB2+1
+    global counterHB02
+    counterHB02 = counterHB02 + 1
+    counterhb1fin = []
+    counterhb1fin.append(counterHB02)
+    print counterhb1fin
 
 def counterHB3():
-    counterHB3 = 0
-    counterHB3 = counterHB3+1
+    global counterHB03
+    counterHB03 = counterHB03 + 1
+    counterhb1fin = []
+    counterhb1fin.append(counterHB03)
+    print counterhb1fin
 
-def counterHB4():
-    counterHB4 = 0
-    counterHB4 = counterHB4+1
 
 ####HeadGirl Counter####
 def counterHG1():
-    counterHG1 = 0
+    global counterHG01
+    counterHG01 = counterHG01 + 1
+    counterhb1fin = []
+    counterhb1fin.append(counterHG01)
+    print counterhb1fin
 
 def counterHG2():
-    counterHG2 = 0
+    global counterHG02
+    counterHG02 = counterHG02 + 1
+    counterhb1fin = []
+    counterhb1fin.append(counterHG02)
+    print counterhb1fin
 
-def counterHG3():
-    counterHG3 = 0
-
-def counterHG4():
-    counterHG4 = 0
 
 ####AsstHeadBoy Counter####
 def counterAHB1():
-    counterAHB1 = 0
+    global counterAHB01
+    counterAHB01 = counterAHB01 + 1
+    counterhb1fin = []
+    counterhb1fin.append(counterAHB01)
+    print counterhb1fin
 
 def counterAHB2():
-    counterAHB2 = 0
+    global counterAHB02
+    counterAHB02 = counterAHB02 + 1
+    counterhb1fin = []
+    counterhb1fin.append(counterAHB02)
+    print counterhb1fin
 
-def counterAHB3():
-    counterAHB3 = 0
-
-def counterAHB4():
-    counterAHB4 = 0
 
 ####AsstHeadGirl Counter####
 def counterAHG1():
-    counterAHG1 = 0
+    global counterAHG01
+    counterAHG01 = counterAHG01 + 1
+    counterhb1fin = []
+    counterhb1fin.append(counterAHG01)
+    print counterhb1fin
 
 def counterAHG2():
-    counterAHG2 = 0
+    global counterAHG02
+    counterAHG02 = counterAHG02 + 1
+    counterhb1fin = []
+    counterhb1fin.append(counterAHG02)
+    print counterhb1fin
 
 def counterAHG3():
-    counterAHG3 = 0
+    global counterAHG03
+    counterAHG03 = counterAHG03 + 1
+    counterhb1fin = []
+    counterhb1fin.append(counterAHG03)
+    print counterhb1fin
 
-def counterAHG4():
-    counterAHG4 = 0
 
 ####Sports Captain Counter####
 def counterSC1():
-    counterSC1 = 0
+    global counterSC01
+    counterSC01 = counterSC01 + 1
+    counterhb1fin = []
+    counterhb1fin.append(counterSC01)
+    print counterhb1fin
 
 def counterSC2():
-    counterSC2 = 0
+    global counterSC02
+    counterSC02 = counterSC02 + 1
+    counterhb1fin = []
+    counterhb1fin.append(counterSC02)
+    print counterhb1fin
 
-def counterSC3():
-    counterSC3 = 0
-
-def counterSC4():
-    counterSC4 = 0
 
 ####AsstSports Captain Counter####
 def counterASC1():
-    counterASC1 = 0
+    global counterASC01
+    counterASC01 = counterASC01 + 1
+    counterhb1fin = []
+    counterhb1fin.append(counterASC01)
+    print counterhb1fin
 
 def counterASC2():
-    counterASC2 = 0
+    global counterASC02
+    counterASC02 = counterASC02 + 1
+    counterhb1fin = []
+    counterhb1fin.append(counterASC02)
+    print counterhb1fin
 
 def counterASC3():
-    counterASC3 = 0
+    global counterASC03
+    counterASC03 = counterASC03 + 1
+    counterhb1fin = []
+    counterhb1fin.append(counterASC03)
+    print counterhb1fin
 
-def counterASC4():
-    counterASC4 = 0
 
 ####Cultural Secretary Counter####
 def counterCS1():
-    counterCS1 = 0
+    global counterCS01
+    counterCS01 = counterCS01 + 1
+    counterhb1fin = []
+    counterhb1fin.append(counterCS01)
+    print counterhb1fin
 
-def counterCS2():
-    counterCS2 = 0
-
-def counterCS3():
-    counterCS3 = 0
-
-def counterCS4():
-    counterCS4 = 0
 
 ####AsstCultural Secretary Counter####
 def counterACS1():
-    counterACS1 = 0
+    global counterACS01
+    counterACS01 = counterACS01 + 1
+    counterhb1fin = []
+    counterhb1fin.append(counterACS01)
+    print counterhb1fin
 
 def counterACS2():
-    counterACS2 = 0
+    global counterACS02
+    counterACS02 = counterACS02 + 1
+    counterhb1fin = []
+    counterhb1fin.append(counterACS02)
+    print counterhb1fin
 
 def counterACS3():
-    counterACS3 = 0
+    global counterACS03
+    counterACS03 = counterACS03 + 1
+    counterhb1fin = []
+    counterhb1fin.append(counterACS03)
+    print counterhb1fin
 
 def counterACS4():
-    counterACS4 = 0
+    global counterACS04
+    counterACS04 = counterACS04 + 1
+    counterhb1fin = []
+    counterhb1fin.append(counterACS04)
+    print counterhb1fin
+
+def counterACS5():
+    global counterACS05
+    counterACS05 = counterACS05 + 1
+    counterhb1fin = []
+    counterhb1fin.append(counterACS05)
+    print counterhb1fin
 
 def houses():
     global screen6
@@ -262,13 +350,13 @@ def houses():
     Label(screen6, text="**** PLEASE SELECT ONLY YOUR RESPECTIVE HOUSE ****").pack()
 
     Label(screen6, text="").pack()
-    Button(screen6, text="Cauvery", width="40", height="2").pack()
+    Button(screen6, text="Cauvery", width="40", height="2", command=cauvery).pack()
     Label(screen6, text="").pack()
-    Button(screen6, text="Gangotri", width="40", height="2").pack()
+    Button(screen6, text="Gangotri", width="40", height="2", command=gangotri).pack()
     Label(screen6, text="").pack()
-    Button(screen6, text="Narmada", width="40", height="2").pack()
+    Button(screen6, text="Narmada", width="40", height="2", command=narmada).pack()
     Label(screen6, text="").pack()
-    Button(screen6, text="Periyar", width="40", height="2").pack()
+    Button(screen6, text="Periyar", width="40", height="2", command=periyar).pack()
 
 def cauvery():
 
@@ -283,9 +371,7 @@ def cauvery():
     Button(text="House Vice Captain", width="30", height="2").pack()
     Label(text="").pack()
     Button(text="Junior House Captain", width="30", height="2")
-    counterHC = 0
-    counterHVC = 0
-    counterJrHC = 0
+
 
 def gangotri():
 
@@ -300,9 +386,7 @@ def gangotri():
     Button(text="House Vice Captain", width="30", height="2").pack()
     Label(text="").pack()
     Button(text="Junior House Captain", width="30", height="2")
-    counterHC = 0
-    counterHVC = 0
-    counterJrHC = 0
+
 
 def narmada():
 
@@ -317,9 +401,7 @@ def narmada():
     Button(text="House Vice Captain", width="30", height="2").pack()
     Label(text="").pack()
     Button(text="Junior House Captain", width="30", height="2")
-    counterHC = 0
-    counterHVC = 0
-    counterJrHC = 0
+
 
 def periyar():
 
@@ -334,9 +416,7 @@ def periyar():
     Button(text="House Vice Captain", width="30", height="2").pack()
     Label(text="").pack()
     Button(text="Junior House Captain", width="30", height="2")
-    counterHC = 0
-    counterHVC = 0
-    counterJrHC = 0
+
 
 def headboy(): # function to display the candidates
 
@@ -345,15 +425,13 @@ def headboy(): # function to display the candidates
     screen5.geometry("640x480")
     screen5.title("Head Boy Candidates List")
 
-    Label(screen5, text="C1 ").grid() # grid have left intentation
-    Button(screen5, text="C1", command=counterHB1).grid()
-    Label(screen5, text="C2 ").grid()
-    Button(screen5, text="C1", command=counterHB2).grid()
-    Label(screen5, text="C3 ").pack() # pack has central intentation
-    Button(screen5, text="C1", command=counterHB3).pack()
-    Label(screen5, text="C4 ").pack()
-    Button(screen5, text="C1", command=counterHB4).pack()
-    candidates = []
+    Label(screen5, text="Kiran Shankar").grid() # grid have left intentation
+    Button(screen5, text="VOTE", command=counterHB1).grid()
+    Label(screen5, text="Joel Geemon Korah").grid()
+    Button(screen5, text="VOTE", command=counterHB2).grid()
+    Label(screen5, text="Arvind Thadi").pack() # pack has central intentation
+    Button(screen5, text="VOTE", command=counterHB3).pack()
+
 
 def headgirl(): # function to display the candidates
 
@@ -361,15 +439,11 @@ def headgirl(): # function to display the candidates
     screen5.geometry("640x480")
     screen5.title("Head Girl Candidates List")
 
-    Label(screen5, text="C1 ").grid() # grid have left intentation
-    Button(screen5, text="C1", command=counterHG1).grid()
-    Label(screen5, text="C2 ").grid()
-    Button(screen5, text="C1", command=counterHG2).grid()
-    Label(screen5, text="C3 ").pack() # pack has central intentation
-    Button(screen5, text="C1", command=counterHG3).pack()
-    Label(screen5, text="C4 ").pack()
-    Button(screen5, text="C1", command=counterHG4).pack()
-    candidates = []
+    Label(screen5, text="Ann Maria Dominic").grid() # grid have left intentation
+    Button(screen5, text="VOTE", command=counterHG1).grid()
+    Label(screen5, text="Maria Charles").grid()
+    Button(screen5, text="VOTE", command=counterHG2).grid()
+
 
 def asstheadboy(): # function to display the candidates
 
@@ -377,15 +451,11 @@ def asstheadboy(): # function to display the candidates
     screen5.geometry("640x480")
     screen5.title("Assistant Head Boy Candidates List")
 
-    Label(screen5, text="C1 ").grid() # grid have left intentation
-    Button(screen5, text="C1", command=counterAHB1).grid()
-    Label(screen5, text="C2 ").grid()
-    Button(screen5, text="C1", command=counterAHB2).grid()
-    Label(screen5, text="C3 ").pack() # pack has central intentation
-    Button(screen5, text="C1", command=counterAHB3).pack()
-    Label(screen5, text="C4 ").pack()
-    Button(screen5, text="C1", command=counterAHB4).pack()
-    candidates = []
+    Label(screen5, text="Mathew Rajesh").grid() # grid have left intentation
+    Button(screen5, text="VOTE", command=counterAHB1).grid()
+    Label(screen5, text="Siddharth Menon").grid()
+    Button(screen5, text="VOTE", command=counterAHB2).grid()
+
 
 def asstheadgirl(): # function to display the candidates
 
@@ -393,15 +463,13 @@ def asstheadgirl(): # function to display the candidates
     screen5.geometry("640x480")
     screen5.title("Assistant Head Girl Candidates List")
 
-    Label(screen5, text="C1 ").grid() # grid have left intentation
-    Button(screen5, text="C1", command=counterAHG1).grid()
-    Label(screen5, text="C2 ").grid()
-    Button(screen5, text="C1", command=counterAHG2).grid()
-    Label(screen5, text="C3 ").pack() # pack has central intentation
-    Button(screen5, text="C1", command=counterAHG3).pack()
-    Label(screen5, text="C4 ").pack()
-    Button(screen5, text="C1", command=counterAHG4).pack()
-    candidates = []
+    Label(screen5, text="Brooke Mariam George").grid() # grid have left intentation
+    Button(screen5, text="VOTE", command=counterAHG1).grid()
+    Label(screen5, text="Rachel Batra").grid()
+    Button(screen5, text="VOTE", command=counterAHG2).grid()
+    Label(screen5, text="Anya Mathew").pack() # pack has central intentation
+    Button(screen5, text="VOTE", command=counterAHG3).pack()
+
 
 def sportcap(): # function to display the candidates
 
@@ -409,15 +477,11 @@ def sportcap(): # function to display the candidates
     screen5.geometry("640x480")
     screen5.title("Sports Captain Candidates List")
 
-    Label(screen5, text="C1 ").grid() # grid have left intentation
-    Button(screen5, text="C1").grid()
-    Label(screen5, text="C2 ").grid()
-    Button(screen5, text="C1").grid()
-    Label(screen5, text="C3 ").pack() # pack has central intentation
-    Button(screen5, text="C1").pack()
-    Label(screen5, text="C4 ").pack()
-    Button(screen5, text="C1").pack()
-    candidates = []
+    Label(screen5, text="Elisheba Naveen").grid() # grid have left intentation
+    Button(screen5, text="VOTE", command=counterSC1).grid()
+    Label(screen5, text="Sachin Koshy").grid()
+    Button(screen5, text="VOTE", command=counterSC2).grid()
+
 
 def sportsvicecap(): # function to display the candidates
 
@@ -425,15 +489,12 @@ def sportsvicecap(): # function to display the candidates
     screen5.geometry("640x480")
     screen5.title("Sports Vice Captain Candidates List")
 
-    Label(screen5, text="C1 ").grid() # grid have left intentation
-    Button(screen5, text="C1").grid()
-    Label(screen5, text="C2 ").grid()
-    Button(screen5, text="C1").grid()
-    Label(screen5, text="C3 ").pack() # pack has central intentation
-    Button(screen5, text="C1").pack()
-    Label(screen5, text="C4 ").pack()
-    Button(screen5, text="C1").pack()
-    candidates = []
+    Label(screen5, text="Hannah Mariam Paul").grid() # grid have left intentation
+    Button(screen5, text="VOTE", command=counterASC1).grid()
+    Label(screen5, text="Karthikey Manoj").grid()
+    Button(screen5, text="VOTE", command=counterASC2).grid()
+    Label(screen5, text="Jaik Kuruvilla Tom").grid()
+    Button(screen5, text="VOTE", command=counterASC2).grid()
 
 def culturalcap(): # function to display the candidates
 
@@ -441,15 +502,9 @@ def culturalcap(): # function to display the candidates
     screen5.geometry("640x480")
     screen5.title("Cultural Captain Candidates List")
 
-    Label(screen5, text="C1 ").grid() # grid have left intentation
-    Button(screen5, text="C1").grid()
-    Label(screen5, text="C2 ").grid()
-    Button(screen5, text="C1").grid()
-    Label(screen5, text="C3 ").pack() # pack has central intentation
-    Button(screen5, text="C1").pack()
-    Label(screen5, text="C4 ").pack()
-    Button(screen5, text="C1").pack()
-    candidates = []
+    Label(screen5, text="Khadija Mehanaaz").grid() # grid have left intentation
+    Button(screen5, text="VOTE", command=counterCS1).grid()
+
 
 def asstcultcap(): # function to display the candidates
 
@@ -457,16 +512,16 @@ def asstcultcap(): # function to display the candidates
     screen5.geometry("640x480")
     screen5.title("Assistant Cultural Captain Candidates List")
 
-    Label(screen5, text="C1 ").grid() # grid have left intentation
-    Button(screen5, text="C1").grid()
-    Label(screen5, text="C2 ").grid()
-    Button(screen5, text="C1").grid()
-    Label(screen5, text="C3 ").pack() # pack has central intentation
-    Button(screen5, text="C1").pack()
-    Label(screen5, text="C4 ").pack()
-    Button(screen5, text="C1").pack()
-    candidates = []
-
+    Label(screen5, text="Megan Jacob").grid() # grid have left intentation
+    Button(screen5, text="VOTE", command=counterACS1).grid()
+    Label(screen5, text="Maria Georgy").grid() # grid have left intentation
+    Button(screen5, text="VOTE", command=counterACS2).grid()
+    Label(screen5, text="Anoushka Thiruvillakat").grid() # grid have left intentation
+    Button(screen5, text="VOTE", command=counterACS3).grid()
+    Label(screen5, text="Gowri Nair").grid() # grid have left intentation
+    Button(screen5, text="VOTE", command=counterACS4).grid()
+    Label(screen5, text="Ruth Sarah Abraham").grid() # grid have left intentation
+    Button(screen5, text="VOTE", command=counterACS5).grid()
 
 def main_screen(): # main opening screen with logo.
     global screen
