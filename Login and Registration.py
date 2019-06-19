@@ -3,11 +3,11 @@ import os
 from tkinter import *
 import tkinter.messagebox
 from PIL import ImageTk, Image
-from collections import Counter
 
 
 def screendestroy(screen):
     screen.destroy()
+
 
 def login_success(): # message box to display login successful message
     tkinter.messagebox.showinfo("Login Success", "You have Logged in successfully")
@@ -19,6 +19,7 @@ def incorrect_password(): # message box to display password error
 
 def user_not_found(): # message box to display unknown user
     tkinter.messagebox.showinfo("Unknown User", "User not identified")
+
 
 def register_user(): # function to record the registered user into the list
     username_info = username.get()
@@ -85,7 +86,7 @@ def login(): # function to login for each user
     global screen2
     screen2 = Toplevel(screen)
     screen2.title("Login")
-    screen2.geometry("640x480")
+    screen2.geometry("%sx%s" % (width, height))
 
     status = Label(screen2, text="The Choice School", bd=1, relief=SUNKEN, anchor=W)
     status.pack(side=BOTTOM, fill=X)
@@ -116,7 +117,7 @@ def login(): # function to login for each user
 def options(): # function to display the Posts
 
     screen4 = Toplevel(screen)
-    screen4.geometry("720x640")
+    screen4.geometry("%sx%s" % (width, height))
 
     status = Label(screen4, text="The Choice School", bd=1, relief=SUNKEN, anchor=W)
     status.pack(side=BOTTOM, fill=X)
@@ -321,7 +322,7 @@ def narmada():
     counterJrHC = 0
 
 def periyar():
-    
+
     global screen7
     screen7 = Toplevel(screen)
     screen7.geometry("640x480")
@@ -469,8 +470,13 @@ def asstcultcap(): # function to display the candidates
 
 def main_screen(): # main opening screen with logo.
     global screen
+    global width
+    global height
+
     screen = Tk()
-    screen.geometry("720x640")
+    width = screen.winfo_screenwidth()
+    height = screen.winfo_screenheight()
+    screen.geometry("%sx%s" % (width, height))
     screen.title("Choice School Election 2019-20")
 
     photo = ImageTk.PhotoImage(Image.open("logo.png"))
