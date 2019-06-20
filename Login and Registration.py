@@ -4,37 +4,37 @@ from tkinter import *
 import tkinter.messagebox
 from PIL import ImageTk, Image
 
-#### Global counter for headboy
+#  Global counter for headboy
 counterHB01 = 0
 counterHB02 = 0
 counterHB03 = 0
 
-#### Global counter for headgirl
+#  Global counter for headgirl
 counterHG01 = 0
 counterHG02 = 0
 
-#### Global counter for asst headboy
+#  Global counter for asst headboy
 counterAHB01 = 0
 counterAHB02 = 0
 
-#### Global counter for asst headgirl
+#  Global counter for asst headgirl
 counterAHG01 = 0
 counterAHG02 = 0
 counterAHG03 = 0
 
-#### Global counter for sports captain
+#  Global counter for sports captain
 counterSC01 = 0
 counterSC02 = 0
 
-#### Global counter for sports vice captain
+#  Global counter for sports vice captain
 counterASC01 = 0
 counterASC02 = 0
 counterASC03 = 0
 
-#### Global counter for cultural captain
+#  Global counter for cultural captain
 counterCS01 = 0
 
-#### Global counter for asst cultural captain
+#  Global counter for asst cultural captain
 counterACS01 = 0
 counterACS02 = 0
 counterACS03 = 0
@@ -46,19 +46,21 @@ def screendestroy(screen):
     screen.destroy()
 
 
-def login_success(): # message box to display login successful message
+def login_success():  # message box to display login successful message
     tkinter.messagebox.showinfo("Login Success", "You have Logged in successfully")
     screendestroy(screen2)
-    options() # function to display the Candidate options
+    options()  # function to display the Candidate options
 
-def incorrect_password(): # message box to display password error
+
+def incorrect_password():  # message box to display password error
     tkinter.messagebox.showinfo("Login Failed", "Incorrect password or username")
 
-def user_not_found(): # message box to display unknown user
+
+def user_not_found():  # message box to display unknown user
     tkinter.messagebox.showinfo("Unknown User", "User not identified")
 
 
-def register_user(): # function to record the registered user into the list
+def register_user():  # function to record the registered user into the list
     username_info = username.get()
     password_info = password.get()
 
@@ -72,7 +74,8 @@ def register_user(): # function to record the registered user into the list
 
     Label(screen1, text="Registration Successful", fg="green", font=("calibri", 11)).pack()
 
-def register(): # function to register new users
+
+def register():  # function to register new users
     global screen1
     screen1 = Toplevel(screen)
     screen1.title("Register")
@@ -100,7 +103,8 @@ def register(): # function to register new users
     Label(screen1, text="").pack()
     Button(screen1, text="Register", height="3", width="30", command=register_user).pack()
 
-def login_verify(): # function to verify the login credentials
+
+def login_verify():  # function to verify the login credentials
 
     username1 = username_verify.get()
     password1 = password_verify.get()
@@ -119,7 +123,8 @@ def login_verify(): # function to verify the login credentials
     else:
         user_not_found()
 
-def login(): # function to login for each user
+
+def login():  # function to login for each user
     global screen2
     screen2 = Toplevel(screen)
     screen2.title("Login")
@@ -151,13 +156,13 @@ def login(): # function to login for each user
     Button(screen2, text="Login", width="30", height="3", command=login_verify).pack()
 
 
-def options(): # function to display the Posts
+def options():  # function to display the Posts
 
     screen4 = Toplevel(screen)
     screen4.geometry("%sx%s" % (width, height))
-
-    status = Label(screen4, text="The Choice School", bd=1, relief=SUNKEN, anchor=W)
-    status.pack(side=BOTTOM, fill=X)
+    
+    # status = Label(screen4, text="The Choice School", bd=1, relief=SUNKEN, anchor=W)
+    # status.pack(side=BOTTOM, fill=X)
 
     Label(screen4, text="").pack()
     Button(screen4, text="Head Boy", width="40", height="2", command=headboy).pack()
@@ -178,168 +183,223 @@ def options(): # function to display the Posts
     Label(screen4, text="").pack()
     Button(screen4, text="Houses", width="50", height="2", command=houses).pack()
 
-####HeadBoy Counter####
 
+#   HeadBoy Counter
 def counterHB1():
     global counterHB01
     counterHB01 = counterHB01 + 1
     counterhb1fin = []
     counterhb1fin.append(counterHB01)
-    print counterhb1fin
+    filename = open("Kiran Shankar", 'w')
+    filename.write("The number of votes are " + str(counterhb1fin))
+    filename.close()
+
 
 def counterHB2():
     global counterHB02
     counterHB02 = counterHB02 + 1
     counterhb1fin = []
     counterhb1fin.append(counterHB02)
-    print counterhb1fin
+    filename = open("Joel Geemon Korah", 'w')
+    filename.write("The number of votes are " + str(counterhb1fin))
+    filename.close()
+
 
 def counterHB3():
     global counterHB03
     counterHB03 = counterHB03 + 1
     counterhb1fin = []
     counterhb1fin.append(counterHB03)
-    print counterhb1fin
+    filename = open("Arvind Thadi", 'w')
+    filename.write("The number of votes are " + str(counterhb1fin))
+    filename.close()
 
 
-####HeadGirl Counter####
+#   HeadGirl Counter
 def counterHG1():
     global counterHG01
     counterHG01 = counterHG01 + 1
     counterhb1fin = []
     counterhb1fin.append(counterHG01)
-    print counterhb1fin
+    filename = open("Ann Maria Dominic", 'w')
+    filename.write("The number of votes are " + str(counterhb1fin))
+    filename.close()
+
 
 def counterHG2():
     global counterHG02
     counterHG02 = counterHG02 + 1
     counterhb1fin = []
     counterhb1fin.append(counterHG02)
-    print counterhb1fin
+    filename = open("Maria Charles", 'w')
+    filename.write("The number of votes are " + str(counterhb1fin))
+    filename.close()
 
 
-####AsstHeadBoy Counter####
+#   AsstHeadBoy Counter
 def counterAHB1():
     global counterAHB01
     counterAHB01 = counterAHB01 + 1
     counterhb1fin = []
     counterhb1fin.append(counterAHB01)
-    print counterhb1fin
+    filename = open("Mathew Rajesh", 'w')
+    filename.write("The number of votes are " + str(counterhb1fin))
+    filename.close()
+
 
 def counterAHB2():
     global counterAHB02
     counterAHB02 = counterAHB02 + 1
     counterhb1fin = []
     counterhb1fin.append(counterAHB02)
-    print counterhb1fin
+    filename = open("Siddharth Menon", 'w')
+    filename.write("The number of votes are " + str(counterhb1fin))
+    filename.close()
 
 
-####AsstHeadGirl Counter####
+#   AsstHeadGirl Counter
 def counterAHG1():
     global counterAHG01
     counterAHG01 = counterAHG01 + 1
     counterhb1fin = []
     counterhb1fin.append(counterAHG01)
-    print counterhb1fin
+    filename = open("Brooke Mariam George", 'w')
+    filename.write("The number of votes are " + str(counterhb1fin))
+    filename.close()
+
 
 def counterAHG2():
     global counterAHG02
     counterAHG02 = counterAHG02 + 1
     counterhb1fin = []
     counterhb1fin.append(counterAHG02)
-    print counterhb1fin
+    filename = open("Rachel Batra", 'w')
+    filename.write("The number of votes are " + str(counterhb1fin))
+    filename.close()
+
 
 def counterAHG3():
     global counterAHG03
     counterAHG03 = counterAHG03 + 1
     counterhb1fin = []
     counterhb1fin.append(counterAHG03)
-    print counterhb1fin
+    filename = open("Anya Mathew", 'w')
+    filename.write("The number of votes are " + str(counterhb1fin))
+    filename.close()
 
 
-####Sports Captain Counter####
+#   Sports Captain Counter
 def counterSC1():
     global counterSC01
     counterSC01 = counterSC01 + 1
     counterhb1fin = []
     counterhb1fin.append(counterSC01)
-    print counterhb1fin
+    filename = open("Elisheba Naveen", 'w')
+    filename.write("The number of votes are " + str(counterhb1fin))
+    filename.close()
 
 def counterSC2():
     global counterSC02
     counterSC02 = counterSC02 + 1
     counterhb1fin = []
     counterhb1fin.append(counterSC02)
-    print counterhb1fin
+    filename = open("Sachin Koshy", 'w')
+    filename.write("The number of votes are " + str(counterhb1fin))
+    filename.close()
 
 
-####AsstSports Captain Counter####
+#   AsstSports Captain Counter
 def counterASC1():
     global counterASC01
     counterASC01 = counterASC01 + 1
     counterhb1fin = []
     counterhb1fin.append(counterASC01)
-    print counterhb1fin
+    filename = open("Hannah Mariam Paul", 'w')
+    filename.write("The number of votes are " + str(counterhb1fin))
+    filename.close()
+
 
 def counterASC2():
     global counterASC02
     counterASC02 = counterASC02 + 1
     counterhb1fin = []
     counterhb1fin.append(counterASC02)
-    print counterhb1fin
+    filename = open("Karthikey Manoj", 'w')
+    filename.write("The number of votes are " + str(counterhb1fin))
+    filename.close()
+
 
 def counterASC3():
     global counterASC03
     counterASC03 = counterASC03 + 1
     counterhb1fin = []
     counterhb1fin.append(counterASC03)
-    print counterhb1fin
+    filename = open("Jaik Kuruvilla Tom", 'w')
+    filename.write("The number of votes are " + str(counterhb1fin))
+    filename.close()
 
 
-####Cultural Secretary Counter####
+#   Cultural Secretary Counter
 def counterCS1():
     global counterCS01
     counterCS01 = counterCS01 + 1
     counterhb1fin = []
     counterhb1fin.append(counterCS01)
-    print counterhb1fin
+    filename = open("Khadija Mehnaaz", 'w')
+    filename.write("The number of votes are " + str(counterhb1fin))
+    filename.close()
 
 
-####AsstCultural Secretary Counter####
+#   AsstCultural Secretary Counter
 def counterACS1():
     global counterACS01
     counterACS01 = counterACS01 + 1
     counterhb1fin = []
     counterhb1fin.append(counterACS01)
-    print counterhb1fin
+    filename = open("Megan Jacob", 'w')
+    filename.write("The number of votes are " + str(counterhb1fin))
+    filename.close()
+
 
 def counterACS2():
     global counterACS02
     counterACS02 = counterACS02 + 1
     counterhb1fin = []
     counterhb1fin.append(counterACS02)
-    print counterhb1fin
+    filename = open("Maria Georgy", 'w')
+    filename.write("The number of votes are " + str(counterhb1fin))
+    filename.close()
+
 
 def counterACS3():
     global counterACS03
     counterACS03 = counterACS03 + 1
     counterhb1fin = []
     counterhb1fin.append(counterACS03)
-    print counterhb1fin
+    filename = open("Anoushka Thiruvilakat", 'w')
+    filename.write("The number of votes are " + str(counterhb1fin))
+    filename.close()
+
 
 def counterACS4():
     global counterACS04
     counterACS04 = counterACS04 + 1
     counterhb1fin = []
     counterhb1fin.append(counterACS04)
-    print counterhb1fin
+    filename = open("Gowri Nair", 'w')
+    filename.write("The number of votes are " + str(counterhb1fin))
+    filename.close()
+
 
 def counterACS5():
     global counterACS05
     counterACS05 = counterACS05 + 1
     counterhb1fin = []
     counterhb1fin.append(counterACS05)
-    print counterhb1fin
+    filename = open("Ruth Sara Abraham", 'w')
+    filename.write("The number of votes are " + str(counterhb1fin))
+    filename.close()
+
 
 def houses():
     global screen6
@@ -358,6 +418,7 @@ def houses():
     Label(screen6, text="").pack()
     Button(screen6, text="Periyar", width="40", height="2", command=periyar).pack()
 
+
 def cauvery():
 
     global screen7
@@ -366,7 +427,7 @@ def cauvery():
     screen7.title("Cauvery")
 
     Label(text="").pack()
-    Button(text="House Captain", width="30", height="2")
+    Button(text="House Captain", width="30", height="2", command=housecapcav)
     Label(text="").pack()
     Button(text="House Vice Captain", width="30", height="2").pack()
     Label(text="").pack()
@@ -381,7 +442,7 @@ def gangotri():
     screen7.title("Gangotri")
 
     Label(text="").pack()
-    Button(text="House Captain", width="30", height="2")
+    Button(text="House Captain", width="30", height="2", command=housecapgan)
     Label(text="").pack()
     Button(text="House Vice Captain", width="30", height="2").pack()
     Label(text="").pack()
@@ -396,7 +457,7 @@ def narmada():
     screen7.title("Narmada")
 
     Label(text="").pack()
-    Button(text="House Captain", width="30", height="2")
+    Button(text="House Captain", width="30", height="2", command=housecapnar)
     Label(text="").pack()
     Button(text="House Vice Captain", width="30", height="2").pack()
     Label(text="").pack()
@@ -411,95 +472,109 @@ def periyar():
     screen7.title("Periyar")
 
     Label(text="").pack()
-    Button(text="House Captain", width="30", height="2")
+    Button(text="House Captain", width="30", height="2", command=housecapper)
     Label(text="").pack()
     Button(text="House Vice Captain", width="30", height="2").pack()
     Label(text="").pack()
     Button(text="Junior House Captain", width="30", height="2")
 
 
-def headboy(): # function to display the candidates
+def housecapcav():
+    Label(text="").pack()
 
-    global screen5
+def housecapgan():
+    Label(text="").pack()
+
+def housecapnar():
+    Label(text="").pack()
+
+def housecapper():
+    Label(text="").pack()
+
+
+def headboy():  # function to display the candidates
+
+    # global screen5
     screen5 = Toplevel(screen)
-    screen5.geometry("640x480")
+    screen5.geometry("720x640")
     screen5.title("Head Boy Candidates List")
 
-    Label(screen5, text="Kiran Shankar").grid() # grid have left intentation
+    Label(screen5, text="Kiran Shankar").grid()  # grid have left intentation
     Button(screen5, text="VOTE", command=counterHB1).grid()
     Label(screen5, text="Joel Geemon Korah").grid()
     Button(screen5, text="VOTE", command=counterHB2).grid()
-    Label(screen5, text="Arvind Thadi").pack() # pack has central intentation
+    Label(screen5, text="Arvind Thadi").pack()  # pack has central intentation
     Button(screen5, text="VOTE", command=counterHB3).pack()
 
 
-def headgirl(): # function to display the candidates
+def headgirl():  # function to display the candidates
 
     screen5 = Toplevel(screen)
-    screen5.geometry("640x480")
+    screen5.geometry("720x640")
     screen5.title("Head Girl Candidates List")
 
-    Label(screen5, text="Ann Maria Dominic").grid() # grid have left intentation
+    Label(screen5, text="Ann Maria Dominic").grid()  # grid have left intentation
     Button(screen5, text="VOTE", command=counterHG1).grid()
     Label(screen5, text="Maria Charles").grid()
     Button(screen5, text="VOTE", command=counterHG2).grid()
 
 
-def asstheadboy(): # function to display the candidates
+def asstheadboy():  # function to display the candidates
 
     screen5 = Toplevel(screen)
-    screen5.geometry("640x480")
+    screen5.geometry("720x640")
     screen5.title("Assistant Head Boy Candidates List")
 
-    Label(screen5, text="Mathew Rajesh").grid() # grid have left intentation
+    Label(screen5, text="Mathew Rajesh").grid()  # grid have left intentation
     Button(screen5, text="VOTE", command=counterAHB1).grid()
     Label(screen5, text="Siddharth Menon").grid()
     Button(screen5, text="VOTE", command=counterAHB2).grid()
 
 
-def asstheadgirl(): # function to display the candidates
+def asstheadgirl():  # function to display the candidates
 
     screen5 = Toplevel(screen)
-    screen5.geometry("640x480")
+    screen5.geometry("720x640")
     screen5.title("Assistant Head Girl Candidates List")
 
-    Label(screen5, text="Brooke Mariam George").grid() # grid have left intentation
+    Label(screen5, text="Brooke Mariam George").grid()  # grid have left intentation
     Button(screen5, text="VOTE", command=counterAHG1).grid()
     Label(screen5, text="Rachel Batra").grid()
     Button(screen5, text="VOTE", command=counterAHG2).grid()
-    Label(screen5, text="Anya Mathew").pack() # pack has central intentation
+    Label(screen5, text="Anya Mathew").pack()  # pack has central intentation
     Button(screen5, text="VOTE", command=counterAHG3).pack()
 
 
-def sportcap(): # function to display the candidates
+def sportcap():  # function to display the candidates
 
     screen5 = Toplevel(screen)
-    screen5.geometry("640x480")
+    screen5.geometry("720x640")
     screen5.title("Sports Captain Candidates List")
 
-    Label(screen5, text="Elisheba Naveen").grid() # grid have left intentation
+    Label(screen5, text="Elisheba Naveen").grid()  # grid have left intentation
     Button(screen5, text="VOTE", command=counterSC1).grid()
     Label(screen5, text="Sachin Koshy").grid()
     Button(screen5, text="VOTE", command=counterSC2).grid()
 
 
-def sportsvicecap(): # function to display the candidates
+def sportsvicecap():  # function to display the candidates
 
     screen5 = Toplevel(screen)
-    screen5.geometry("640x480")
+    screen5.geometry("720x640")
     screen5.title("Sports Vice Captain Candidates List")
 
-    Label(screen5, text="Hannah Mariam Paul").grid() # grid have left intentation
+    Label(screen5, text="Hannah Mariam Paul").grid()  # grid have left intentation
     Button(screen5, text="VOTE", command=counterASC1).grid()
     Label(screen5, text="Karthikey Manoj").grid()
     Button(screen5, text="VOTE", command=counterASC2).grid()
     Label(screen5, text="Jaik Kuruvilla Tom").grid()
     Button(screen5, text="VOTE", command=counterASC2).grid()
 
-def culturalcap(): # function to display the candidates
+
+def culturalcap():  # function to display the candidates
 
     screen5 = Toplevel(screen)
-    screen5.geometry("640x480")
+    screen5.geometry("720x640")
     screen5.title("Cultural Captain Candidates List")
 
     Label(screen5, text="Khadija Mehanaaz").grid() # grid have left intentation
@@ -509,7 +584,7 @@ def culturalcap(): # function to display the candidates
 def asstcultcap(): # function to display the candidates
 
     screen5 = Toplevel(screen)
-    screen5.geometry("640x480")
+    screen5.geometry("720x640")
     screen5.title("Assistant Cultural Captain Candidates List")
 
     Label(screen5, text="Megan Jacob").grid() # grid have left intentation
