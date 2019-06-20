@@ -111,7 +111,7 @@ def login_verify():  # function to verify the login credentials
     username_entry1.delete(0, END)
     password_entry1.delete(0, END)
 
-    path = "C:\Users\Cyriac\PycharmProjects\SchoolElection"
+    path = "..\SchoolElection"
     list_of_files = os.listdir(path)
     if username1 in list_of_files:
         file1 = open(username1, "r")
@@ -160,7 +160,7 @@ def options():  # function to display the Posts
 
     screen4 = Toplevel(screen)
     screen4.geometry("%sx%s" % (width, height))
-    
+
     # status = Label(screen4, text="The Choice School", bd=1, relief=SUNKEN, anchor=W)
     # status.pack(side=BOTTOM, fill=X)
 
@@ -427,11 +427,11 @@ def cauvery():
     screen7.title("Cauvery")
 
     Label(text="").pack()
-    Button(text="House Captain", width="30", height="2", command=housecapcav)
+    Button(text="House Captain", width="30", height="2", command=housecapcav).pack()
     Label(text="").pack()
-    Button(text="House Vice Captain", width="30", height="2").pack()
+    Button(text="House Vice Captain", width="30", height="2", command=houseviccapcav).pack()
     Label(text="").pack()
-    Button(text="Junior House Captain", width="30", height="2")
+    Button(text="Junior House Captain", width="30", height="2", command=jrhousecapcav).pack()
 
 
 def gangotri():
@@ -442,11 +442,11 @@ def gangotri():
     screen7.title("Gangotri")
 
     Label(text="").pack()
-    Button(text="House Captain", width="30", height="2", command=housecapgan)
+    Button(text="House Captain", width="30", height="2", command=housecapgan).pack()
     Label(text="").pack()
-    Button(text="House Vice Captain", width="30", height="2").pack()
+    Button(text="House Vice Captain", width="30", height="2", command=houseviccapgan).pack()
     Label(text="").pack()
-    Button(text="Junior House Captain", width="30", height="2")
+    Button(text="Junior House Captain", width="30", height="2", command=jrhousecapgan).pack()
 
 
 def narmada():
@@ -457,11 +457,11 @@ def narmada():
     screen7.title("Narmada")
 
     Label(text="").pack()
-    Button(text="House Captain", width="30", height="2", command=housecapnar)
+    Button(text="House Captain", width="30", height="2", command=housecapnar).pack()
     Label(text="").pack()
-    Button(text="House Vice Captain", width="30", height="2").pack()
+    Button(text="House Vice Captain", width="30", height="2", command=houseviccapnar).pack()
     Label(text="").pack()
-    Button(text="Junior House Captain", width="30", height="2")
+    Button(text="Junior House Captain", width="30", height="2", command=jrhousecapnar).pack()
 
 
 def periyar():
@@ -472,11 +472,11 @@ def periyar():
     screen7.title("Periyar")
 
     Label(text="").pack()
-    Button(text="House Captain", width="30", height="2", command=housecapper)
+    Button(text="House Captain", width="30", height="2", command=housecapper).pack()
     Label(text="").pack()
-    Button(text="House Vice Captain", width="30", height="2").pack()
+    Button(text="House Vice Captain", width="30", height="2", command=houseviccapper).pack()
     Label(text="").pack()
-    Button(text="Junior House Captain", width="30", height="2")
+    Button(text="Junior House Captain", width="30", height="2", command=jrhousecapper).pack()
 
 
 def housecapcav():
@@ -491,6 +491,60 @@ def housecapnar():
 def housecapper():
     Label(text="").pack()
 
+def houseviccapcav():
+    Label(text="").pack()
+
+def houseviccapgan():
+    Label(text="").pack()
+
+def houseviccapnar():
+    Label(text="").pack()
+
+def houseviccapper():
+    Label(text="").pack()
+
+def jrhousecapcav():
+    Label(text="").pack()
+    Button(text="Athulya Rajesh", width="40", height="2").pack()
+    Label(text="").pack()
+    Button(text="Nandini Nair", width="40", height="2").pack()
+    Label(text="").pack()
+    Button(text="Miriya Jimmy", width="40", height="2").pack()
+    Label(text="").pack()
+    Button(text="Saira Celin", width="40", height="2").pack()
+
+def jrhousecapgan():
+    Label(text="").pack()
+    Button(text="Lakshmi Neeliyath", width="40", height="2").pack()
+    Label(text="").pack()
+    Button(text="Kevin Zavier", width="40", height="2").pack()
+    Label(text="").pack()
+    Button(text="Vaibhav Lal", width="40", height="2").pack()
+    Label(text="").pack()
+    Button(text="Rahul Thanikkan", width="40", height="2").pack()
+    Label(text="").pack()
+    Button(text="Rebecca Harrison", width="40", height="2").pack()
+
+def jrhousecapnar():
+    Label(text="").pack()
+    Button(text="Ruth", width="40", height="2").pack()
+    Label(text="").pack()
+    Button(text="Vania Eliza", width="40", height="2").pack()
+    Label(text="").pack()
+    Button(text="Neha Jayan", width="40", height="2").pack()
+    Label(text="").pack()
+    Button(text="Tanu George", width="40", height="2").pack()
+
+def jrhousecapper():
+    Label(text="").pack()
+    Button(text="George Philip", width="40", height="2").pack()
+    Label(text="").pack()
+    Button(text="Gopika Kumar", width="40", height="2").pack()
+    Label(text="").pack()
+    Button(text="Anoushka Panicker", width="40", height="2").pack()
+    Label(text="").pack()
+    Button(text="Zoha Rashid", width="40", height="2").pack()
+
 
 def headboy():  # function to display the candidates
 
@@ -504,7 +558,7 @@ def headboy():  # function to display the candidates
     Label(screen5, text="Joel Geemon Korah").grid()
     Button(screen5, text="VOTE", command=counterHB2).grid()
     Label(screen5, text="Arvind Thadi").pack()  # pack has central intentation
-    Button(screen5, text="VOTE", command=counterHB3).pack()
+    Button(screen5, text="VOTE", command=counterHB3).grid()
 
 
 def headgirl():  # function to display the candidates
@@ -512,7 +566,6 @@ def headgirl():  # function to display the candidates
     screen5 = Toplevel(screen)
     screen5.geometry("720x640")
     screen5.title("Head Girl Candidates List")
-
     Label(screen5, text="Ann Maria Dominic").grid()  # grid have left intentation
     Button(screen5, text="VOTE", command=counterHG1).grid()
     Label(screen5, text="Maria Charles").grid()
@@ -542,7 +595,7 @@ def asstheadgirl():  # function to display the candidates
     Label(screen5, text="Rachel Batra").grid()
     Button(screen5, text="VOTE", command=counterAHG2).grid()
     Label(screen5, text="Anya Mathew").pack()  # pack has central intentation
-    Button(screen5, text="VOTE", command=counterAHG3).pack()
+    Button(screen5, text="VOTE", command=counterAHG3).grid()
 
 
 def sportcap():  # function to display the candidates
