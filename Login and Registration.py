@@ -510,9 +510,14 @@ def cauvery():
     screen7.title("Cauvery")
 
     Label(screen7, text="").pack()
-    Button(screen7, text="House Captain and House Vice Captain", width="30", height="2", command=housecapcav).pack()
+    HCc = Button(screen7, text="House Captain and House Vice Captain", width="30", height="2", command=housecapcav)
+    HCc.pack()
     Label(screen7, text="").pack()
-    Button(screen7, text="Junior House Captain", width="30", height="2", command=jrhousecapcav).pack()
+    JHCc = Button(screen7, text="Junior House Captain 8th", width="30", height="2", command=jrhousecapcav)
+    JHCc.pack()
+    Label(screen7, text="").pack()
+    JHCc2 = Button(screen7, text="Junior House Captain 9th", width="30", height="2", command=jrhousecapcav2)
+    JHCc2.pack()
     cav.config(state=DISABLED, text="VOTED", fg="red")
     gan.config(state=DISABLED, text="VOTED", fg="red")
     nar.config(state=DISABLED, text="VOTED", fg="red")
@@ -527,9 +532,14 @@ def gangotri():
     screen7.title("Gangotri")
 
     Label(screen7, text="").pack()
-    Button(screen7, text="House Captain and House Vice Captain", width="30", height="2", command=housecapgan).pack()
+    HCg = Button(screen7, text="House Captain and House Vice Captain", width="30", height="2", command=housecapgan)
+    HCg.pack()
     Label(screen7, text="").pack()
-    Button(screen7, text="Junior House Captain", width="30", height="2", command=jrhousecapgan).pack()
+    JHCg = Button(screen7, text="Junior House Captain 8th", width="30", height="2", command=jrhousecapgan)
+    JHCg.pack()
+    Label(screen7, text="").pack()
+    JHCg2 = Button(screen7, text="Junior House Captain 9th", width="30", height="2", command=jrhousecapgan2)
+    JHCg2.pack()
     cav.config(state=DISABLED, text="VOTED", fg="red")
     gan.config(state=DISABLED, text="VOTED", fg="red")
     nar.config(state=DISABLED, text="VOTED", fg="red")
@@ -544,9 +554,14 @@ def narmada():
     screen7.title("Narmada")
 
     Label(screen7, text="").pack()
-    Button(screen7, text="House Captain and House Vice Captain", width="30", height="2", command=housecapnar).pack()
+    HCn = Button(screen7, text="House Captain and House Vice Captain", width="30", height="2", command=housecapnar)
+    HCn.pack()
     Label(screen7, text="").pack()
-    Button(screen7, text="Junior House Captain", width="30", height="2", command=jrhousecapnar).pack()
+    JHCn = Button(screen7, text="Junior House Captain 8th", width="30", height="2", command=jrhousecapnar)
+    JHCn.pack()
+    Label(screen7, text="").pack()
+    JHCn2 = Button(screen7, text="Junior House Captain 9th", width="30", height="2", command=jrhousecapnar2)
+    JHCn2.pack()
     cav.config(state=DISABLED, text="VOTED", fg="red")
     gan.config(state=DISABLED, text="VOTED", fg="red")
     nar.config(state=DISABLED, text="VOTED", fg="red")
@@ -561,9 +576,14 @@ def periyar():
     screen7.title("Periyar")
 
     Label(screen7, text="").pack()
-    Button(screen7, text="House Captain and House Vice Captain", width="30", height="2", command=housecapper).pack()
+    HCp = Button(screen7, text="House Captain and House Vice Captain", width="30", height="2", command=housecapper)
+    HCp.pack()
     Label(screen7, text="").pack()
-    Button(screen7, text="Junior House Captain", width="30", height="2", command=jrhousecapper).pack()
+    JHCp = Button(screen7, text="Junior House Captain 8th", width="30", height="2", command=jrhousecapper)
+    JHCp.pack()
+    Label(screen7, text="").pack()
+    JHCp2 = Button(screen7, text="Junior House Captain 9th", width="30", height="2", command=jrhousecapper2)
+    JHCp2.pack()
     cav.config(state=DISABLED, text="VOTED", fg="red")
     gan.config(state=DISABLED, text="VOTED", fg="red")
     nar.config(state=DISABLED, text="VOTED", fg="red")
@@ -749,7 +769,7 @@ def countercavJHC1():
     filename.write("The number of votes are " + str(counterhb1fin))
     filename.close()
     screendestroy(screen8)
-    screendestroy(screen7)
+
 
 
 def countercavJHC2():
@@ -761,7 +781,7 @@ def countercavJHC2():
     filename.write("The number of votes are " + str(counterhb1fin))
     filename.close()
     screendestroy(screen8)
-    screendestroy(screen7)
+
 
 
 def countercavJHC3():
@@ -773,7 +793,7 @@ def countercavJHC3():
     filename.write("The number of votes are " + str(counterhb1fin))
     filename.close()
     screendestroy(screen8)
-    screendestroy(screen7)
+
 
 
 def countercavJHC4():
@@ -785,7 +805,7 @@ def countercavJHC4():
     filename.write("The number of votes are " + str(counterhb1fin))
     filename.close()
     screendestroy(screen8)
-    screendestroy(screen7)
+
 
 
 def counterganJHC1():
@@ -797,7 +817,7 @@ def counterganJHC1():
     filename.write("The number of votes are " + str(counterhb1fin))
     filename.close()
     screendestroy(screen8)
-    screendestroy(screen7)
+
 
 
 def counterganJHC2():
@@ -809,7 +829,7 @@ def counterganJHC2():
     filename.write("The number of votes are " + str(counterhb1fin))
     filename.close()
     screendestroy(screen8)
-    screendestroy(screen7)
+
 
 
 def counterganJHC3():
@@ -821,7 +841,6 @@ def counterganJHC3():
     filename.write("The number of votes are " + str(counterhb1fin))
     filename.close()
     screendestroy(screen8)
-    screendestroy(screen7)
 
 
 def counterganJHC4():
@@ -833,7 +852,6 @@ def counterganJHC4():
     filename.write("The number of votes are " + str(counterhb1fin))
     filename.close()
     screendestroy(screen8)
-    screendestroy(screen7)
 
 
 def counterganJHC5():
@@ -845,7 +863,7 @@ def counterganJHC5():
     filename.write("The number of votes are " + str(counterhb1fin))
     filename.close()
     screendestroy(screen8)
-    screendestroy(screen7)
+
 
 
 def counternarJHC1():
@@ -857,7 +875,7 @@ def counternarJHC1():
     filename.write("The number of votes are " + str(counterhb1fin))
     filename.close()
     screendestroy(screen8)
-    screendestroy(screen7)
+
 
 
 def counternarJHC2():
@@ -869,7 +887,7 @@ def counternarJHC2():
     filename.write("The number of votes are " + str(counterhb1fin))
     filename.close()
     screendestroy(screen8)
-    screendestroy(screen7)
+
 
 
 def counternarJHC3():
@@ -881,7 +899,7 @@ def counternarJHC3():
     filename.write("The number of votes are " + str(counterhb1fin))
     filename.close()
     screendestroy(screen8)
-    screendestroy(screen7)
+
 
 
 def counternarJHC4():
@@ -893,7 +911,6 @@ def counternarJHC4():
     filename.write("The number of votes are " + str(counterhb1fin))
     filename.close()
     screendestroy(screen8)
-    screendestroy(screen7)
 
 
 def counterperJHC1():
@@ -905,7 +922,7 @@ def counterperJHC1():
     filename.write("The number of votes are " + str(counterhb1fin))
     filename.close()
     screendestroy(screen8)
-    screendestroy(screen7)
+
 
 
 def counterperJHC2():
@@ -917,7 +934,7 @@ def counterperJHC2():
     filename.write("The number of votes are " + str(counterhb1fin))
     filename.close()
     screendestroy(screen8)
-    screendestroy(screen7)
+
 
 
 def counterperJHC3():
@@ -929,7 +946,7 @@ def counterperJHC3():
     filename.write("The number of votes are " + str(counterhb1fin))
     filename.close()
     screendestroy(screen8)
-    screendestroy(screen7)
+
 
 
 def counterperJHC4():
@@ -941,7 +958,7 @@ def counterperJHC4():
     filename.write("The number of votes are " + str(counterhb1fin))
     filename.close()
     screendestroy(screen8)
-    screendestroy(screen7)
+
 
 
 def housecapcav():
@@ -958,7 +975,6 @@ def housecapcav():
     Button(screen8, text="Shiva Sabin", width="40", height="2", command=countercavHC3).pack()
 
 
-
 def housecapgan():
 
     global screen8
@@ -973,6 +989,7 @@ def housecapgan():
     Button(screen8, text="Karishma Kothari", width="40", height="2", command=counterganHC3).pack()
     Label(screen8, text="").pack()
     Button(screen8, text="Archana Namboothiri", width="40", height="2", command=counterganHC4).pack()
+
 
 def housecapnar():
 
@@ -1016,6 +1033,13 @@ def jrhousecapcav():
     Button(screen8, text="Athulya Rajesh", width="40", height="2", command=countercavJHC1).pack()
     Label(screen8, text="").pack()
     Button(screen8, text="Nandini Nair", width="40", height="2", command=countercavJHC2).pack()
+
+
+def jrhousecapcav2():
+    global screen8
+    screen8 = Toplevel(screen)
+    screen8.geometry("640x480")
+    screen8.title("Junior House Captain 2")
     Label(screen8, text="").pack()
     Button(screen8, text="Miriya Jimmy", width="40", height="2", command=countercavJHC3).pack()
     Label(screen8, text="").pack()
@@ -1034,6 +1058,13 @@ def jrhousecapgan():
     Button(screen8, text="Kevin Zavier", width="40", height="2", command=counterganJHC2).pack()
     Label(screen8, text="").pack()
     Button(screen8, text="Vaibhav Lal", width="40", height="2", command=counterganJHC3).pack()
+
+
+def jrhousecapgan2():
+    global screen8
+    screen8 = Toplevel(screen)
+    screen8.geometry("640x480")
+    screen8.title("Junior House Captain")
     Label(screen8, text="").pack()
     Button(screen8, text="Rahul Thanikkan", width="40", height="2", command=counterganJHC4).pack()
     Label(screen8, text="").pack()
@@ -1047,11 +1078,18 @@ def jrhousecapnar():
     screen8.geometry("640x480")
     screen8.title("Junior House Captain")
     Label(screen8, text="").pack()
-    Button(screen8, text="Ruth", width="40", height="2", command=counternarJHC1).pack()
-    Label(screen8, text="").pack()
     Button(screen8, text="Vania Eliza", width="40", height="2", command=counternarJHC2).pack()
     Label(screen8, text="").pack()
     Button(screen8, text="Neha Jayan", width="40", height="2", command=counternarJHC3).pack()
+
+
+def jrhousecapnar2():
+    global screen8
+    screen8 = Toplevel(screen)
+    screen8.geometry("640x480")
+    screen8.title("Junior House Captain")
+    Label(screen8, text="").pack()
+    Button(screen8, text="Ruth", width="40", height="2", command=counternarJHC1).pack()
     Label(screen8, text="").pack()
     Button(screen8, text="Tanu George", width="40", height="2", command=counternarJHC4).pack()
 
@@ -1063,13 +1101,20 @@ def jrhousecapper():
     screen8.geometry("640x480")
     screen8.title("Junior House Captain")
     Label(screen8, text="").pack()
-    Button(screen8, text="George Philip", width="40", height="2", command=counterperJHC1).pack()
-    Label(screen8, text="").pack()
-    Button(screen8, text="Gopika Kumar", width="40", height="2", command=counterperJHC2).pack()
-    Label(screen8, text="").pack()
     Button(screen8, text="Anoushka Panicker", width="40", height="2", command=counterperJHC3).pack()
     Label(screen8, text="").pack()
     Button(screen8, text="Zoha Rashid", width="40", height="2", command=counterperJHC4).pack()
+
+
+def jrhousecapper2():
+    global screen8
+    screen8 = Toplevel(screen)
+    screen8.geometry("640x480")
+    screen8.title("Junior House Captain")
+    Label(screen8, text="").pack()
+    Button(screen8, text="George Philip", width="40", height="2", command=counterperJHC1).pack()
+    Label(screen8, text="").pack()
+    Button(screen8, text="Gopika Kumar", width="40", height="2", command=counterperJHC2).pack()
 
 
 def headboy():  # function to display the candidates
