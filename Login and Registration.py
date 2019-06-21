@@ -158,30 +158,49 @@ def login():  # function to login for each user
 
 def options():  # function to display the Posts
 
+    global HB
+    global HG
+    global AHB
+    global AHG
+    global SC
+    global SVC
+    global CS
+    global ACS
+    global House
     screen4 = Toplevel(screen)
     screen4.geometry("%sx%s" % (width, height))
+    screen4.title("Posts")
 
     # status = Label(screen4, text="The Choice School", bd=1, relief=SUNKEN, anchor=W)
     # status.pack(side=BOTTOM, fill=X)
 
     Label(screen4, text="").pack()
-    Button(screen4, text="Head Boy", width="40", height="2", command=headboy).pack()
+    HB = Button(screen4, text="Head Boy", width="40", height="2", command=headboy)
+    HB.pack()
     Label(screen4, text="").pack()
-    Button(screen4, text="Head Girl", width="40", height="2", command=headgirl).pack()
+    HG = Button(screen4, text="Head Girl", width="40", height="2", command=headgirl)
+    HG.pack()
     Label(screen4, text="").pack()
-    Button(screen4, text="Assistant Head Boy", width="40", height="2", command=asstheadboy).pack()
+    AHB = Button(screen4, text="Assistant Head Boy", width="40", height="2", command=asstheadboy)
+    AHB.pack()
     Label(screen4, text="").pack()
-    Button(screen4, text="Assistant Head Girl", width="40", height="2", command=asstheadgirl).pack()
+    AHG = Button(screen4, text="Assistant Head Girl", width="40", height="2", command=asstheadgirl)
+    AHG.pack()
     Label(screen4, text="").pack()
-    Button(screen4, text="Sports Captain", width="40", height="2", command=sportcap).pack()
+    SC = Button(screen4, text="Sports Captain", width="40", height="2", command=sportcap)
+    SC.pack()
     Label(screen4, text="").pack()
-    Button(screen4, text="Sports Vice Captain", width="40", height="2", command=sportsvicecap).pack()
+    SVC = Button(screen4, text="Sports Vice Captain", width="40", height="2", command=sportsvicecap)
+    SVC.pack()
     Label(screen4, text="").pack()
-    Button(screen4, text="Cultural Captain", width="40", height="2", command=culturalcap).pack()
+    CS = Button(screen4, text="Cultural Captain", width="40", height="2", command=culturalcap)
+    CS.pack()
     Label(screen4, text="").pack()
-    Button(screen4, text="Assistant Cultural Captain", width="40", height="2", command=asstcultcap).pack()
+    ACS = Button(screen4, text="Assistant Cultural Captain", width="40", height="2", command=asstcultcap)
+    ACS.pack()
     Label(screen4, text="").pack()
-    Button(screen4, text="Houses", width="50", height="2", command=houses).pack()
+    House = Button(screen4, text="Houses", width="50", height="2", command=houses)
+    House.pack()
 
 
 #   HeadBoy Counter
@@ -417,6 +436,7 @@ def houses():
     Button(screen6, text="Narmada", width="40", height="2", command=narmada).pack()
     Label(screen6, text="").pack()
     Button(screen6, text="Periyar", width="40", height="2", command=periyar).pack()
+    House.config(state=DISABLED, text="VOTED", fg="red")
 
 
 def cauvery():
@@ -552,13 +572,14 @@ def headboy():  # function to display the candidates
     screen5 = Toplevel(screen)
     screen5.geometry("720x640")
     screen5.title("Head Boy Candidates List")
-
+    print ("Functioning")
     Label(screen5, text="Kiran Shankar").grid()  # grid have left intentation
     Button(screen5, text="VOTE", command=counterHB1).grid()
     Label(screen5, text="Joel Geemon Korah").grid()
     Button(screen5, text="VOTE", command=counterHB2).grid()
     Label(screen5, text="Arvind Thadi").pack()  # pack has central intentation
     Button(screen5, text="VOTE", command=counterHB3).grid()
+    HB.config(state=DISABLED, text="VOTED", fg="red")
 
 
 def headgirl():  # function to display the candidates
@@ -570,6 +591,7 @@ def headgirl():  # function to display the candidates
     Button(screen5, text="VOTE", command=counterHG1).grid()
     Label(screen5, text="Maria Charles").grid()
     Button(screen5, text="VOTE", command=counterHG2).grid()
+    HG.config(state = DISABLED, text="VOTED", fg="red")
 
 
 def asstheadboy():  # function to display the candidates
@@ -582,6 +604,7 @@ def asstheadboy():  # function to display the candidates
     Button(screen5, text="VOTE", command=counterAHB1).grid()
     Label(screen5, text="Siddharth Menon").grid()
     Button(screen5, text="VOTE", command=counterAHB2).grid()
+    AHB.config(state=DISABLED, text="VOTED", fg="red")
 
 
 def asstheadgirl():  # function to display the candidates
@@ -596,6 +619,7 @@ def asstheadgirl():  # function to display the candidates
     Button(screen5, text="VOTE", command=counterAHG2).grid()
     Label(screen5, text="Anya Mathew").pack()  # pack has central intentation
     Button(screen5, text="VOTE", command=counterAHG3).grid()
+    AHG.config(state=DISABLED, text="VOTED", fg="red")
 
 
 def sportcap():  # function to display the candidates
@@ -608,6 +632,7 @@ def sportcap():  # function to display the candidates
     Button(screen5, text="VOTE", command=counterSC1).grid()
     Label(screen5, text="Sachin Koshy").grid()
     Button(screen5, text="VOTE", command=counterSC2).grid()
+    SC.config(state=DISABLED, text="VOTED", fg="red")
 
 
 def sportsvicecap():  # function to display the candidates
@@ -622,7 +647,7 @@ def sportsvicecap():  # function to display the candidates
     Button(screen5, text="VOTE", command=counterASC2).grid()
     Label(screen5, text="Jaik Kuruvilla Tom").grid()
     Button(screen5, text="VOTE", command=counterASC2).grid()
-
+    SVC.config(state = DISABLED, text="VOTED", fg="red")
 
 def culturalcap():  # function to display the candidates
 
@@ -632,9 +657,9 @@ def culturalcap():  # function to display the candidates
 
     Label(screen5, text="Khadija Mehanaaz").grid() # grid have left intentation
     Button(screen5, text="VOTE", command=counterCS1).grid()
+    CS.config(state=DISABLED, text="VOTED", fg="red")
 
-
-def asstcultcap(): # function to display the candidates
+def asstcultcap():  # function to display the candidates
 
     screen5 = Toplevel(screen)
     screen5.geometry("720x640")
@@ -650,8 +675,9 @@ def asstcultcap(): # function to display the candidates
     Button(screen5, text="VOTE", command=counterACS4).grid()
     Label(screen5, text="Ruth Sarah Abraham").grid() # grid have left intentation
     Button(screen5, text="VOTE", command=counterACS5).grid()
+    ACS.config(state=DISABLED, text="VOTED", fg="red")
 
-def main_screen(): # main opening screen with logo.
+def main_screen():  # main opening screen with logo.
     global screen
     global width
     global height
@@ -675,6 +701,7 @@ def main_screen(): # main opening screen with logo.
     Button(text="Register", height="3", width="40", command=register).pack()
 
     screen.mainloop()
+
 
 main_screen()
 
