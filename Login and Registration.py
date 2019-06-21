@@ -505,6 +505,9 @@ def houses():
 
 def cauvery():
     global screen7
+    global HCc
+    global JHCc
+    global JHCc2
     screen7 = Toplevel(screen)
     screen7.geometry("640x480")
     screen7.title("Cauvery")
@@ -527,6 +530,9 @@ def cauvery():
 
 def gangotri():
     global screen7
+    global HCg
+    global JHCg
+    global JHCg2
     screen7 = Toplevel(screen)
     screen7.geometry("640x480")
     screen7.title("Gangotri")
@@ -549,6 +555,9 @@ def gangotri():
 
 def narmada():
     global screen7
+    global HCn
+    global JHCn
+    global JHCn2
     screen7 = Toplevel(screen)
     screen7.geometry("640x480")
     screen7.title("Narmada")
@@ -571,6 +580,9 @@ def narmada():
 
 def periyar():
     global screen7
+    global HCp
+    global JHCp
+    global JHCp2
     screen7 = Toplevel(screen)
     screen7.geometry("640x480")
     screen7.title("Periyar")
@@ -973,6 +985,7 @@ def housecapcav():
     Button(screen8, text="Ridesh Nair", width="40", height="2", command=countercavHC2).pack()
     Label(screen8, text="").pack()
     Button(screen8, text="Shiva Sabin", width="40", height="2", command=countercavHC3).pack()
+    HCc.config(state=DISABLED, text="VOTED", fg="red")
 
 
 def housecapgan():
@@ -989,6 +1002,7 @@ def housecapgan():
     Button(screen8, text="Karishma Kothari", width="40", height="2", command=counterganHC3).pack()
     Label(screen8, text="").pack()
     Button(screen8, text="Archana Namboothiri", width="40", height="2", command=counterganHC4).pack()
+    HCg.config(state=DISABLED, text="VOTED", fg="red")
 
 
 def housecapnar():
@@ -1005,6 +1019,7 @@ def housecapnar():
     Button(screen8, text="Sancia Ann", width="40", height="2", command=counternarHC3).pack()
     Label(screen8, text="").pack()
     Button(screen8, text="Anna Kurien", width="40", height="2", command=counternarHC4).pack()
+    HCn.config(state=DISABLED, text="VOTED", fg="red")
 
 
 def housecapper():
@@ -1021,6 +1036,7 @@ def housecapper():
     Button(screen8, text="Ritcha George", width="40", height="2", command=counterperHC3).pack()
     Label(screen8, text="").pack()
     Button(screen8, text="Ananya Harish", width="40", height="2", command=counterperHC4).pack()
+    HCp.config(state=DISABLED, text="VOTED", fg="red")
 
 
 def jrhousecapcav():
@@ -1033,6 +1049,7 @@ def jrhousecapcav():
     Button(screen8, text="Athulya Rajesh", width="40", height="2", command=countercavJHC1).pack()
     Label(screen8, text="").pack()
     Button(screen8, text="Nandini Nair", width="40", height="2", command=countercavJHC2).pack()
+    JHCc.config(state=DISABLED, text="VOTED", fg="red")
 
 
 def jrhousecapcav2():
@@ -1044,6 +1061,7 @@ def jrhousecapcav2():
     Button(screen8, text="Miriya Jimmy", width="40", height="2", command=countercavJHC3).pack()
     Label(screen8, text="").pack()
     Button(screen8, text="Saira Celin", width="40", height="2", command=countercavJHC4).pack()
+    JHCc2.config(state=DISABLED, text="VOTED", fg="red")
 
 
 def jrhousecapgan():
@@ -1058,6 +1076,7 @@ def jrhousecapgan():
     Button(screen8, text="Kevin Zavier", width="40", height="2", command=counterganJHC2).pack()
     Label(screen8, text="").pack()
     Button(screen8, text="Vaibhav Lal", width="40", height="2", command=counterganJHC3).pack()
+    JHCg.config(state=DISABLED, text="VOTED", fg="red")
 
 
 def jrhousecapgan2():
@@ -1069,6 +1088,7 @@ def jrhousecapgan2():
     Button(screen8, text="Rahul Thanikkan", width="40", height="2", command=counterganJHC4).pack()
     Label(screen8, text="").pack()
     Button(screen8, text="Rebecca Harrison", width="40", height="2", command=counterganJHC5).pack()
+    JHCg2.config(state=DISABLED, text="VOTED", fg="red")
 
 
 def jrhousecapnar():
@@ -1081,6 +1101,7 @@ def jrhousecapnar():
     Button(screen8, text="Vania Eliza", width="40", height="2", command=counternarJHC2).pack()
     Label(screen8, text="").pack()
     Button(screen8, text="Neha Jayan", width="40", height="2", command=counternarJHC3).pack()
+    JHCn.config(state=DISABLED, text="VOTED", fg="red")
 
 
 def jrhousecapnar2():
@@ -1092,6 +1113,7 @@ def jrhousecapnar2():
     Button(screen8, text="Ruth", width="40", height="2", command=counternarJHC1).pack()
     Label(screen8, text="").pack()
     Button(screen8, text="Tanu George", width="40", height="2", command=counternarJHC4).pack()
+    JHCn2.config(state=DISABLED, text="VOTED", fg="red")
 
 
 def jrhousecapper():
@@ -1104,6 +1126,7 @@ def jrhousecapper():
     Button(screen8, text="Anoushka Panicker", width="40", height="2", command=counterperJHC3).pack()
     Label(screen8, text="").pack()
     Button(screen8, text="Zoha Rashid", width="40", height="2", command=counterperJHC4).pack()
+    JHCp.config(state=DISABLED, text="VOTED", fg="red")
 
 
 def jrhousecapper2():
@@ -1115,6 +1138,7 @@ def jrhousecapper2():
     Button(screen8, text="George Philip", width="40", height="2", command=counterperJHC1).pack()
     Label(screen8, text="").pack()
     Button(screen8, text="Gopika Kumar", width="40", height="2", command=counterperJHC2).pack()
+    JHCp2.config(state=DISABLED, text="VOTED", fg="red")
 
 
 def headboy():  # function to display the candidates
