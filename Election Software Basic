@@ -1,6 +1,8 @@
 # !/usr/bin/python
 import os
 from Tkinter import *
+# import tkinter.messagebox
+from PIL import ImageTk, Image
 
 #  Global counter for headboy
 counterHB01 = 0
@@ -79,6 +81,11 @@ def screendestroy(screen):
     screen.destroy()
 
 
+def login_success():  # message box to display login successful message
+    screendestroy(screen2)
+    options()  # function to display the Candidate options
+
+
 
 def register_user():  # function to record the registered user into the list
     username_info = username.get()
@@ -137,7 +144,12 @@ def login_verify():  # function to verify the login credentials
         file1 = open(username1, "r")
         verify = file1.read().splitlines()
         if password1 in verify:
-            options()
+            login_success()
+        else:
+            incorrect_password()
+    else:
+        user_not_found()
+
 
 def login():  # function to login for each user
     global screen2
@@ -185,7 +197,7 @@ def options():  # function to display the Posts
     screen4 = Toplevel(screen)
     screen4.geometry("%sx%s" % (width, height))
     screen4.title("Posts")
-    screendestroy(screen2)
+
     # status = Label(screen4, text="The Choice School", bd=1, relief=SUNKEN, anchor=W)
     # status.pack(side=BOTTOM, fill=X)
 
@@ -1124,10 +1136,19 @@ def jrhousecapper2():
 def headboy():  # function to display the candidates
 
     global screen5
+    # global photo1
     screen5 = Toplevel(screen)
-    screen5.geometry("720x640")
+
+    # screen5.geometry("720x640")
+    screen5.geometry("%sx%s" % (width, height))
     screen5.title("Head Boy Candidates List")
     # print ("Functioning")
+    photo1 = ImageTk.PhotoImage(Image.open("Shiva.png"))
+    # print(dir(photo1))
+    # print(photo, photo1)
+    label_ = Label(screen5 ,image=photo1)
+    label_.grid()
+    # print(label_.image)
     Label(screen5, text="Kiran Shankar").grid()  # grid have left intentation
     Button(screen5, text="VOTE", command=counterHB1).grid()
     Label(screen5, text="Joel Geemon Korah").grid()
@@ -1244,13 +1265,17 @@ def main_screen():  # main opening screen with logo.
     global screen
     global width
     global height
-
+    global photo
+    global photo1
     screen = Tk()
     width = screen.winfo_screenwidth()
     height = screen.winfo_screenheight()
     screen.geometry("%sx%s" % (width, height))
     screen.title("Choice School Election 2019-20")
 
+    photo = ImageTk.PhotoImage(Image.open("logo.png"))
+    photo1 = ImageTk.PhotoImage(Image.open("logo.png"))
+    Label(image=photo).pack()
 
     status = Label(text="The Choice School", bd=1, relief=SUNKEN, anchor=W)
     status.pack(side=BOTTOM, fill=X)
