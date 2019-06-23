@@ -227,9 +227,9 @@ def options():  # function to display the Posts
     Label(screen4, text="").pack()
     SVC = Button(screen4, text="Sports Vice Captain", width="40", height="2", command=sportsvicecap)
     SVC.pack()
-    Label(screen4, text="").pack()
-    CS = Button(screen4, text="Cultural Captain", width="40", height="2", command=culturalcap)
-    CS.pack()
+    # Label(screen4, text="").pack()
+    # CS = Button(screen4, text="Cultural Captain", width="40", height="2", command=culturalcap)
+    # CS.pack()
     Label(screen4, text="").pack()
     ACS = Button(screen4, text="Assistant Cultural Captain", width="40", height="2", command=asstcultcap)
     ACS.pack()
@@ -408,15 +408,15 @@ def counterASC3():
     screendestroy(screen5)
 
 #   Cultural Secretary Counter
-def counterCS1():
-    global counterCS01
-    counterCS01 = counterCS01 + 1
-    counterhb1fin = []
-    counterhb1fin.append(counterCS01)
-    filename = open("Khadija Mehnaaz", 'w')
-    filename.write("The number of votes are " + str(counterhb1fin))
-    filename.close()
-    screendestroy(screen5)
+# def counterCS1():
+#     global counterCS01
+#     counterCS01 = counterCS01 + 1
+#     counterhb1fin = []
+#     counterhb1fin.append(counterCS01)
+#     filename = open("Khadija Mehnaaz", 'w')
+#     filename.write("The number of votes are " + str(counterhb1fin))
+#     filename.close()
+#     screendestroy(screen5)
 
 
 #   AsstCultural Secretary Counter
@@ -977,14 +977,20 @@ def housecapcav():
 
     global screen8
     screen8 = Toplevel(screen)
-    screen8.geometry("640x480")
+    # screen8.geometry("640x480")
     screen8.title("House Captain and Vice Captain")
-    Label(screen8, text="").pack()
-    Button(screen8, text="Devika Suresh", width="40", height="2", command=countercavHC1).pack()
-    Label(screen8, text="").pack()
-    Button(screen8, text="Ridesh Nair", width="40", height="2", command=countercavHC2).pack()
-    Label(screen8, text="").pack()
-    Button(screen8, text="Shiva Sabin", width="40", height="2", command=countercavHC3).pack()
+    Label(screen8, text="").grid(row=0, column=0)
+    label_ = Label(screen8, image=photo9)
+    label_.grid(row=1, column=0)
+    Button(screen8, text="Devika Suresh", width="40", height="2", command=countercavHC1).grid(row=2, column=0)
+    Label(screen8, text="").grid(row=3, column=0)
+    label_ = Label(screen8, image=photo48)
+    label_.grid(row=4, column=0)
+    Button(screen8, text="Ridesh Nair", width="40", height="2", command=countercavHC2).grid(row=5, column=0)
+    Label(screen8, text="").grid(row=0, column=1)
+    label_ = Label(screen8, image=photo40)
+    label_.grid(row=1, column=1)
+    Button(screen8, text="Shiva Sabin", width="40", height="2", command=countercavHC3).grid(row=2, column=1)
     HCc.config(state=DISABLED, text="VOTED", fg="red")
 
 
@@ -992,16 +998,24 @@ def housecapgan():
 
     global screen8
     screen8 = Toplevel(screen)
-    screen8.geometry("640x480")
+    # screen8.geometry("640x480")
     screen8.title("House Captain and Vice Captain")
-    Label(screen8, text="").pack()
-    Button(screen8, text="Elizabeth Jacob", width="40", height="2", command=counterganHC1).pack()
-    Label(screen8, text="").pack()
-    Button(screen8, text="Lakshmi Anil", width="40", height="2", command=counterganHC2).pack()
-    Label(screen8, text="").pack()
-    Button(screen8, text="Karishma Kothari", width="40", height="2", command=counterganHC3).pack()
-    Label(screen8, text="").pack()
-    Button(screen8, text="Archana Namboothiri", width="40", height="2", command=counterganHC4).pack()
+    Label(screen8, text="").grid(row=0, column=0)
+    label_ = Label(screen8, image=photo10)
+    label_.grid(row=1, column=0)
+    Button(screen8, text="Elizabeth Jacob", width="40", height="2", command=counterganHC1).grid(row=2, column=0)
+    Label(screen8, text="").grid(row=3, column=0)
+    label_ = Label(screen8, image=photo23)
+    label_.grid(row=4, column=0)
+    Button(screen8, text="Lakshmi Anil", width="40", height="2", command=counterganHC2).grid(row=5, column=0)
+    Label(screen8, text="").grid(row=0, column=1)
+    label_ = Label(screen8, image=photo19)
+    label_.grid(row=1, column=1)
+    Button(screen8, text="Karishma Kothari", width="40", height="2", command=counterganHC3).grid(row=2, column=1)
+    Label(screen8, text="").grid(row=3, column=1)
+    label_ = Label(screen8, image=photo5)
+    label_.grid(row=4, column=1)
+    Button(screen8, text="Archana Namboothiri", width="40", height="2", command=counterganHC4).grid(row=5, column=1)
     HCg.config(state=DISABLED, text="VOTED", fg="red")
 
 
@@ -1009,16 +1023,24 @@ def housecapnar():
 
     global screen8
     screen8 = Toplevel(screen)
-    screen8.geometry("640x480")
+    # screen8.geometry("640x480")
     screen8.title("House Captain and Vice Captain")
-    Label(screen8, text="").pack()
-    Button(screen8, text="Hetvi Lalan", width="40", height="2", command=counternarHC1).pack()
-    Label(screen8, text="").pack()
-    Button(screen8, text="Saira Jacob", width="40", height="2", command=counternarHC2).pack()
-    Label(screen8, text="").pack()
-    Button(screen8, text="Sancia Ann", width="40", height="2", command=counternarHC3).pack()
-    Label(screen8, text="").pack()
-    Button(screen8, text="Anna Kurien", width="40", height="2", command=counternarHC4).pack()
+    Label(screen8, text="").grid(row=0, column=0)
+    label_ = Label(screen8, image=photo16)
+    label_.grid(row=1, column=0)
+    Button(screen8, text="Hetvi Lalan", width="40", height="2", command=counternarHC1).grid(row=2, column=0)
+    Label(screen8, text="").grid(row=3, column=0)
+    label_ = Label(screen8, image=photo37)
+    label_.grid(row=4, column=0)
+    Button(screen8, text="Saira Jacob", width="40", height="2", command=counternarHC2).grid(row=5, column=0)
+    Label(screen8, text="").grid(row=0, column=1)
+    label_ = Label(screen8, image=photo38)
+    label_.grid(row=1, column=1)
+    Button(screen8, text="Sancia Ann", width="40", height="2", command=counternarHC3).grid(row=2, column=1)
+    Label(screen8, text="").grid(row=3, column=1)
+    label_ = Label(screen8, image=photo2)
+    label_.grid(row=4, column=1)
+    Button(screen8, text="Anna Kurien", width="40", height="2", command=counternarHC4).grid(row=5, column=1)
     HCn.config(state=DISABLED, text="VOTED", fg="red")
 
 
@@ -1026,16 +1048,24 @@ def housecapper():
 
     global screen8
     screen8 = Toplevel(screen)
-    screen8.geometry("640x480")
+    # screen8.geometry("640x480")
     screen8.title("House Captain and Vice Captain")
-    Label(screen8, text="").pack()
-    Button(screen8, text="Kezia Michelle George", width="40", height="2", command=counterperHC1).pack()
-    Label(screen8, text="").pack()
-    Button(screen8, text="Gopika G", width="40", height="2", command=counterperHC2).pack()
-    Label(screen8, text="").pack()
-    Button(screen8, text="Ritcha George", width="40", height="2", command=counterperHC3).pack()
-    Label(screen8, text="").pack()
-    Button(screen8, text="Ananya Harish", width="40", height="2", command=counterperHC4).pack()
+    Label(screen8, text="").grid(row=0, column=0)
+    label_ = Label(screen8, image=photo22)
+    label_.grid(row=1, column=0)
+    Button(screen8, text="Kezia Michelle George", width="40", height="2", command=counterperHC1).grid(row=2, column=0)
+    Label(screen8, text="").grid(row=3, column=0)
+    label_ = Label(screen8, image=photo13)
+    label_.grid(row=4, column=0)
+    Button(screen8, text="Gopika G", width="40", height="2", command=counterperHC2).grid(row=5, column=0)
+    Label(screen8, text="").grid(row=0, column=1)
+    label_ = Label(screen8, image=photo34)
+    label_.grid(row=1, column=1)
+    Button(screen8, text="Ritcha George", width="40", height="2", command=counterperHC3).grid(row=2, column=1)
+    Label(screen8, text="").grid(row=3, column=1)
+    label_ = Label(screen8, image=photo1)
+    label_.grid(row=4, column=1)
+    Button(screen8, text="Ananya Harish", width="40", height="2", command=counterperHC4).grid(row=5, column=1)
     HCp.config(state=DISABLED, text="VOTED", fg="red")
 
 
@@ -1043,11 +1073,15 @@ def jrhousecapcav():
 
     global screen8
     screen8 = Toplevel(screen)
-    screen8.geometry("640x480")
+    # screen8.geometry("640x480")
     screen8.title("Junior House Captain")
     Label(screen8, text="").pack()
+    label_ = Label(screen8, image=photo7)
+    label_.pack()
     Button(screen8, text="Athulya Rajesh", width="40", height="2", command=countercavJHC1).pack()
     Label(screen8, text="").pack()
+    label_ = Label(screen8, image=photo30)
+    label_.pack()
     Button(screen8, text="Nandini Nair", width="40", height="2", command=countercavJHC2).pack()
     JHCc.config(state=DISABLED, text="VOTED", fg="red")
 
@@ -1055,11 +1089,15 @@ def jrhousecapcav():
 def jrhousecapcav2():
     global screen8
     screen8 = Toplevel(screen)
-    screen8.geometry("640x480")
+    # screen8.geometry("640x480")
     screen8.title("Junior House Captain 2")
     Label(screen8, text="").pack()
+    label_ = Label(screen8, image=photo29)
+    label_.pack()
     Button(screen8, text="Miriya Jimmy", width="40", height="2", command=countercavJHC3).pack()
     Label(screen8, text="").pack()
+    label_ = Label(screen8, image=photo37)
+    label_.pack()
     Button(screen8, text="Saira Celin", width="40", height="2", command=countercavJHC4).pack()
     JHCc2.config(state=DISABLED, text="VOTED", fg="red")
 
@@ -1068,13 +1106,19 @@ def jrhousecapgan():
 
     global screen8
     screen8 = Toplevel(screen)
-    screen8.geometry("640x480")
+    # screen8.geometry("640x480")
     screen8.title("Junior House Captain")
     Label(screen8, text="").pack()
+    label_ = Label(screen8, image=photo24)
+    label_.pack()
     Button(screen8, text="Lakshmi Neeliyath", width="40", height="2", command=counterganJHC1).pack()
     Label(screen8, text="").pack()
+    label_ = Label(screen8, image=photo21)
+    label_.pack()
     Button(screen8, text="Kevin Zavier", width="40", height="2", command=counterganJHC2).pack()
     Label(screen8, text="").pack()
+    label_ = Label(screen8, image=photo43)
+    label_.pack()
     Button(screen8, text="Vaibhav Lal", width="40", height="2", command=counterganJHC3).pack()
     JHCg.config(state=DISABLED, text="VOTED", fg="red")
 
@@ -1082,11 +1126,15 @@ def jrhousecapgan():
 def jrhousecapgan2():
     global screen8
     screen8 = Toplevel(screen)
-    screen8.geometry("640x480")
+    # screen8.geometry("640x480")
     screen8.title("Junior House Captain")
     Label(screen8, text="").pack()
+    label_ = Label(screen8, image=photo33)
+    label_.pack()
     Button(screen8, text="Rahul Thanikkan", width="40", height="2", command=counterganJHC4).pack()
     Label(screen8, text="").pack()
+    label_ = Label(screen8, text="Photo Unavailable")
+    label_.pack()
     Button(screen8, text="Rebecca Harrison", width="40", height="2", command=counterganJHC5).pack()
     JHCg2.config(state=DISABLED, text="VOTED", fg="red")
 
@@ -1095,11 +1143,15 @@ def jrhousecapnar():
 
     global screen8
     screen8 = Toplevel(screen)
-    screen8.geometry("640x480")
+    # screen8.geometry("640x480")
     screen8.title("Junior House Captain")
     Label(screen8, text="").pack()
+    label_ = Label(screen8, image=photo44)
+    label_.pack()
     Button(screen8, text="Vania Eliza", width="40", height="2", command=counternarJHC2).pack()
     Label(screen8, text="").pack()
+    label_ = Label(screen8, image=photo31)
+    label_.pack()
     Button(screen8, text="Neha Jayan", width="40", height="2", command=counternarJHC3).pack()
     JHCn.config(state=DISABLED, text="VOTED", fg="red")
 
@@ -1107,11 +1159,15 @@ def jrhousecapnar():
 def jrhousecapnar2():
     global screen8
     screen8 = Toplevel(screen)
-    screen8.geometry("640x480")
+    # screen8.geometry("640x480")
     screen8.title("Junior House Captain")
     Label(screen8, text="").pack()
+    label_ = Label(screen8, image=photo35)
+    label_.pack()
     Button(screen8, text="Ruth", width="40", height="2", command=counternarJHC1).pack()
     Label(screen8, text="").pack()
+    label_ = Label(screen8, image=photo42)
+    label_.pack()
     Button(screen8, text="Tanu George", width="40", height="2", command=counternarJHC4).pack()
     JHCn2.config(state=DISABLED, text="VOTED", fg="red")
 
@@ -1120,11 +1176,15 @@ def jrhousecapper():
 
     global screen8
     screen8 = Toplevel(screen)
-    screen8.geometry("640x480")
+    # screen8.geometry("640x480")
     screen8.title("Junior House Captain")
     Label(screen8, text="").pack()
+    label_ = Label(screen8, image=photo4)
+    label_.pack()
     Button(screen8, text="Anoushka Panicker", width="40", height="2", command=counterperJHC3).pack()
     Label(screen8, text="").pack()
+    label_ = Label(screen8, image=photo45)
+    label_.pack()
     Button(screen8, text="Zoha Rashid", width="40", height="2", command=counterperJHC4).pack()
     JHCp.config(state=DISABLED, text="VOTED", fg="red")
 
@@ -1132,26 +1192,39 @@ def jrhousecapper():
 def jrhousecapper2():
     global screen8
     screen8 = Toplevel(screen)
-    screen8.geometry("640x480")
+    # screen8.geometry("640x480")
     screen8.title("Junior House Captain")
     Label(screen8, text="").pack()
+    label_ = Label(screen8, image=photo11)
+    label_.pack()
     Button(screen8, text="George Philip", width="40", height="2", command=counterperJHC1).pack()
     Label(screen8, text="").pack()
-    Button(screen8, text="Gopika Kumar", width="40", height="2", command=counterperJHC2).pack()
+    label_ = Label(screen8, image=photo12)
+    label_.pack()
+    Button(screen8, text="Gopiga Kumar", width="40", height="2", command=counterperJHC2).pack()
     JHCp2.config(state=DISABLED, text="VOTED", fg="red")
 
 
 def headboy():  # function to display the candidates
 
     global screen5
+    # global photo1
     screen5 = Toplevel(screen)
+
     screen5.geometry("720x640")
+    # screen5.geometry("%sx%s" % (width, height))
     screen5.title("Head Boy Candidates List")
     # print ("Functioning")
+    label_ = Label(screen5, text="Photo Unavailable")
+    label_.grid()
     Label(screen5, text="Kiran Shankar").grid()  # grid have left intentation
     Button(screen5, text="VOTE", command=counterHB1).grid()
+    label_ = Label(screen5, image=photo18)
+    label_.grid()
     Label(screen5, text="Joel Geemon Korah").grid()
     Button(screen5, text="VOTE", command=counterHB2).grid()
+    label_ = Label(screen5, image=photo6)
+    label_.grid()
     Label(screen5, text="Arvind Thadi").grid()  # pack has central intentation
     Button(screen5, text="VOTE", command=counterHB3).grid()
     HB.config(state=DISABLED, text="VOTED", fg="red")
@@ -1160,11 +1233,16 @@ def headboy():  # function to display the candidates
 def headgirl():  # function to display the candidates
 
     global screen5
+    global photo3
     screen5 = Toplevel(screen)
     screen5.geometry("720x640")
     screen5.title("Head Girl Candidates List")
+    label_ = Label(screen5, image=photo3)
+    label_.grid()
     Label(screen5, text="Ann Maria Dominic").grid()  # grid have left intentation
     Button(screen5, text="VOTE", command=counterHG1).grid()
+    label_ = Label(screen5, image=photo25)
+    label_.grid()
     Label(screen5, text="Maria Charles").grid()
     Button(screen5, text="VOTE", command=counterHG2).grid()
     HG.config(state = DISABLED, text="VOTED", fg="red")
@@ -1176,9 +1254,12 @@ def asstheadboy():  # function to display the candidates
     screen5 = Toplevel(screen)
     screen5.geometry("720x640")
     screen5.title("Assistant Head Boy Candidates List")
-
+    label_ = Label(screen5, image=photo27)
+    label_.grid()
     Label(screen5, text="Mathew Rajesh").grid()  # grid have left intentation
     Button(screen5, text="VOTE", command=counterAHB1).grid()
+    label_ = Label(screen5, image=photo41)
+    label_.grid()
     Label(screen5, text="Siddharth Menon").grid()
     Button(screen5, text="VOTE", command=counterAHB2).grid()
     AHB.config(state=DISABLED, text="VOTED", fg="red")
@@ -1188,13 +1269,18 @@ def asstheadgirl():  # function to display the candidates
 
     global screen5
     screen5 = Toplevel(screen)
-    screen5.geometry("720x640")
+    screen5.geometry("800x680")
     screen5.title("Assistant Head Girl Candidates List")
-
+    label_ = Label(screen5, image=photo8)
+    label_.grid()
     Label(screen5, text="Brooke Mariam George").grid()  # grid have left intentation
     Button(screen5, text="VOTE", command=counterAHG1).grid()
+    label_ = Label(screen5, image=photo32)
+    label_.grid()
     Label(screen5, text="Rachel Batra").grid()
     Button(screen5, text="VOTE", command=counterAHG2).grid()
+    label_ = Label(screen5, image=photo49)
+    label_.grid()
     Label(screen5, text="Anya Mathew").grid()  # pack has central intentation
     Button(screen5, text="VOTE", command=counterAHG3).grid()
     AHG.config(state=DISABLED, text="VOTED", fg="red")
@@ -1206,9 +1292,12 @@ def sportcap():  # function to display the candidates
     screen5 = Toplevel(screen)
     screen5.geometry("720x640")
     screen5.title("Sports Captain Candidates List")
-
+    label_ = Label(screen5, image=photo47)
+    label_.grid()
     Label(screen5, text="Elisheba Naveen").grid()  # grid have left intentation
     Button(screen5, text="VOTE", command=counterSC1).grid()
+    label_ = Label(screen5, image=photo36)
+    label_.grid()
     Label(screen5, text="Sachin Koshy").grid()
     Button(screen5, text="VOTE", command=counterSC2).grid()
     SC.config(state=DISABLED, text="VOTED", fg="red")
@@ -1220,50 +1309,115 @@ def sportsvicecap():  # function to display the candidates
     screen5 = Toplevel(screen)
     screen5.geometry("720x640")
     screen5.title("Sports Vice Captain Candidates List")
-
+    label_ = Label(screen5, image=photo15)
+    label_.grid()
     Label(screen5, text="Hannah Mariam Paul").grid()  # grid have left intentation
     Button(screen5, text="VOTE", command=counterASC1).grid()
+    label_ = Label(screen5, image=photo20)
+    label_.grid()
     Label(screen5, text="Karthikey Manoj").grid()
     Button(screen5, text="VOTE", command=counterASC2).grid()
+    label_ = Label(screen5, image=photo17)
+    label_.grid()
     Label(screen5, text="Jaik Kuruvilla Tom").grid()
     Button(screen5, text="VOTE", command=counterASC2).grid()
     SVC.config(state = DISABLED, text="VOTED", fg="red")
 
-
-def culturalcap():  # function to display the candidates
-
-    global screen5
-    screen5 = Toplevel(screen)
-    screen5.geometry("720x640")
-    screen5.title("Cultural Captain Candidates List")
-
-    Label(screen5, text="Khadija Mehanaaz").grid()  # grid have left intentation
-    Button(screen5, text="VOTE", command=counterCS1).grid()
-    CS.config(state=DISABLED, text="VOTED", fg="red")
+#
+# def culturalcap():  # function to display the candidates
+#
+#     global screen5
+#     screen5 = Toplevel(screen)
+#     screen5.geometry("720x640")
+#     screen5.title("Cultural Captain Candidates List")
+#
+#     Label(screen5, text="Khadija Mehanaaz").grid()  # grid have left intentation
+#     Button(screen5, text="VOTE", command=counterCS1).grid()
+#     CS.config(state=DISABLED, text="VOTED", fg="red")
 
 def asstcultcap():  # function to display the candidates
 
     global screen5
     screen5 = Toplevel(screen)
-    screen5.geometry("720x640")
+    screen5.geometry("800x680")
     screen5.title("Assistant Cultural Captain Candidates List")
-
+    label_ = Label(screen5, image=photo28)
+    label_.grid()
     Label(screen5, text="Megan Jacob").grid()  # grid have left intentation
     Button(screen5, text="VOTE", command=counterACS1).grid()
+    label_ = Label(screen5, image=photo26)
+    label_.grid()
     Label(screen5, text="Maria Georgy").grid()  # grid have left intentation
     Button(screen5, text="VOTE", command=counterACS2).grid()
+    label_ = Label(screen5, image=photo50)
+    label_.grid()
     Label(screen5, text="Anoushka Thiruvillakat").grid()  # grid have left intentation
     Button(screen5, text="VOTE", command=counterACS3).grid()
-    Label(screen5, text="Gowri Nair").grid()  # grid have left intentation
-    Button(screen5, text="VOTE", command=counterACS4).grid()
-    Label(screen5, text="Ruth Sarah Abraham").grid()  # grid have left intentation
-    Button(screen5, text="VOTE", command=counterACS5).grid()
+    label_ = Label(screen5, image=photo14)
+    label_.grid(row=0, column=1)
+    Label(screen5, text="Gowri Nair").grid(row=1, column=1)  # grid have left intentation
+    Button(screen5, text="VOTE", command=counterACS4).grid(row=2, column=1)
+    label_ = Label(screen5, image=photo46)
+    label_.grid(row=3, column=1)
+    Label(screen5, text="Ruth Sarah Abraham").grid(row=4, column=1)  # grid have left intentation
+    Button(screen5, text="VOTE", command=counterACS5).grid(row=5, column=1)
     ACS.config(state=DISABLED, text="VOTED", fg="red")
 
 def main_screen():  # main opening screen with logo.
     global screen
     global width
     global height
+    global photo
+    global photo1
+    global photo2
+    global photo3
+    global photo4
+    global photo5
+    global photo6
+    global photo7
+    global photo8
+    global photo9
+    global photo10
+    global photo11
+    global photo12
+    global photo13
+    global photo14
+    global photo15
+    global photo16
+    global photo17
+    global photo18
+    global photo19
+    global photo20
+    global photo21
+    global photo22
+    global photo23
+    global photo24
+    global photo25
+    global photo26
+    global photo27
+    global photo28
+    global photo29
+    global photo30
+    global photo31
+    global photo32
+    global photo33
+    global photo34
+    global photo35
+    global photo36
+    global photo37
+    global photo38
+    global photo39
+    global photo40
+    global photo41
+    global photo42
+    global photo43
+    global photo44
+    global photo45
+    global photo46
+    global photo47
+    global photo48
+    global photo49
+    global photo50
 
     screen = Tk()
     width = screen.winfo_screenwidth()
@@ -1272,6 +1426,57 @@ def main_screen():  # main opening screen with logo.
     screen.title("Choice School Election 2019-20")
 
     photo = ImageTk.PhotoImage(Image.open("logo.png"))
+    photo1 = ImageTk.PhotoImage(Image.open("ananyah.png"))
+    photo2 = ImageTk.PhotoImage(Image.open("anna.png"))
+    photo3 = ImageTk.PhotoImage(Image.open("annmaria.png"))
+    photo4 = ImageTk.PhotoImage(Image.open("anoushka.png"))
+    photo5 = ImageTk.PhotoImage(Image.open("archana.png"))
+    photo6 = ImageTk.PhotoImage(Image.open("arvind.png"))
+    photo7 = ImageTk.PhotoImage(Image.open("athulya.png"))
+    photo8 = ImageTk.PhotoImage(Image.open("brooke.png"))
+    photo9 = ImageTk.PhotoImage(Image.open("devika.png"))
+    photo10 = ImageTk.PhotoImage(Image.open("elizabeth.png"))
+    photo11 = ImageTk.PhotoImage(Image.open("georgephilip.png"))
+    photo12 = ImageTk.PhotoImage(Image.open("gopigagk.png"))
+    photo13 = ImageTk.PhotoImage(Image.open("gopikag.png"))
+    photo14 = ImageTk.PhotoImage(Image.open("gowri.png"))
+    photo15 = ImageTk.PhotoImage(Image.open("hannah.png"))
+    photo16 = ImageTk.PhotoImage(Image.open("Hetvi.png"))
+    photo17 = ImageTk.PhotoImage(Image.open("jaik.png"))
+    photo18 = ImageTk.PhotoImage(Image.open("joelgeemon.png"))
+    photo19 = ImageTk.PhotoImage(Image.open("karishma.png"))
+    photo20 = ImageTk.PhotoImage(Image.open("kartikeya.png"))
+    photo21 = ImageTk.PhotoImage(Image.open("kevinx.png"))
+    photo22 = ImageTk.PhotoImage(Image.open("kezia.png"))
+    photo23 = ImageTk.PhotoImage(Image.open("lakshmianil.png"))
+    photo24 = ImageTk.PhotoImage(Image.open("lakshmiN.png"))
+    photo25 = ImageTk.PhotoImage(Image.open("mariacharls.png"))
+    photo26 = ImageTk.PhotoImage(Image.open("mariageorgy.png"))
+    photo27 = ImageTk.PhotoImage(Image.open("mathew.png"))
+    photo28 = ImageTk.PhotoImage(Image.open("megan.png"))
+    photo29 = ImageTk.PhotoImage(Image.open("mirya.png"))
+    photo30 = ImageTk.PhotoImage(Image.open("nandini.png"))
+    photo31 = ImageTk.PhotoImage(Image.open("neha.png"))
+    photo32 = ImageTk.PhotoImage(Image.open("rachel.png"))
+    photo33 = ImageTk.PhotoImage(Image.open("rahult.png"))
+    photo34 = ImageTk.PhotoImage(Image.open("ritcha.png"))
+    photo35 = ImageTk.PhotoImage(Image.open("ruths.png"))
+    photo36 = ImageTk.PhotoImage(Image.open("sachin.png"))
+    photo37 = ImageTk.PhotoImage(Image.open("saira.png"))
+    photo38 = ImageTk.PhotoImage(Image.open("sancia.png"))
+    photo39 = ImageTk.PhotoImage(Image.open("sara.png"))
+    photo40 = ImageTk.PhotoImage(Image.open("Shiva.png"))
+    photo41 = ImageTk.PhotoImage(Image.open("siddharth.png"))
+    photo42 = ImageTk.PhotoImage(Image.open("tanu.png"))
+    photo43 = ImageTk.PhotoImage(Image.open("Vaibhav.png"))
+    photo44 = ImageTk.PhotoImage(Image.open("vania.png"))
+    photo45 = ImageTk.PhotoImage(Image.open("zoha.png"))
+    photo46 = ImageTk.PhotoImage(Image.open("ruthsara.png"))
+    photo47 = ImageTk.PhotoImage(Image.open("elisheba.png"))
+    photo48 = ImageTk.PhotoImage(Image.open("ridesh.png"))
+    photo49 = ImageTk.PhotoImage(Image.open("anya.png"))
+    photo50 = ImageTk.PhotoImage(Image.open("anoushkat.png"))
+
     Label(image=photo).pack()
 
     status = Label(text="The Choice School", bd=1, relief=SUNKEN, anchor=W)
