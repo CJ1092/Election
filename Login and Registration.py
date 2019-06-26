@@ -1320,7 +1320,7 @@ def sportsvicecap():  # function to display the candidates
     label_ = Label(screen5, image=photo17)
     label_.grid()
     Label(screen5, text="Jaik Kuruvilla Tom").grid()
-    Button(screen5, text="VOTE", command=counterASC2).grid()
+    Button(screen5, text="VOTE", command=counterASC3).grid()
     SVC.config(state = DISABLED, text="VOTED", fg="red")
 
 #
